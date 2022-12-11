@@ -1,0 +1,2181 @@
+﻿,temp_clstr_190,hum_clstr_190,wea_desc_clstr_190
+0,301.31,80,light rain
+1,302.04,74,light rain
+2,303.31,64,light rain
+3,304.04,62,broken clouds
+4,305.03,60,broken clouds
+5,305.04,56,broken clouds
+6,305.04,58,broken clouds
+7,300.43,82,thunderstorm with rain
+8,300.88,80,scattered clouds
+9,300.94,85,scattered clouds
+10,301.78,73,broken clouds
+11,300.52,85,broken clouds
+12,300.47,81,light rain
+13,300.52,85,light rain
+14,300.21,81,light rain
+15,300.2,86,broken clouds
+16,300.16,86,light rain
+17,300.25,86,broken clouds
+18,299.46,88,broken clouds
+19,299.46,90,broken clouds
+20,299.2,90,light rain
+21,299.15,92,light rain
+22,299.15,92,light rain
+23,298.83,94,light rain
+24,301.21,83,light rain
+25,302.37,75,light rain
+26,303.76,68,few clouds
+27,303.29,67,light intensity shower rain
+28,303.68,70,thunderstorm with light rain
+29,304.3,60,few clouds
+30,305.45,57,few clouds
+31,304.85,54,scattered clouds
+32,303.4,61,scattered clouds
+33,303.01,68,scattered clouds
+34,303.07,66,scattered clouds
+35,301.16,78,scattered clouds
+36,300.15,80,broken clouds
+37,300.2,81,broken clouds
+38,300.15,81,light rain
+39,300.11,76,broken clouds
+40,299.84,81,broken clouds
+41,299.84,81,broken clouds
+42,299.89,83,broken clouds
+43,299.84,80,broken clouds
+44,298.84,89,broken clouds
+45,298.83,89,broken clouds
+46,298.83,89,broken clouds
+47,298.83,89,broken clouds
+48,300.2,83,light rain
+49,302.46,77,light rain
+50,301.86,79,light intensity shower rain
+51,303.85,68,light rain
+52,302.77,72,broken clouds
+53,303.85,70,broken clouds
+54,304.82,61,broken clouds
+55,305.12,59,light rain
+56,305.29,54,light rain
+57,304.44,55,light rain
+58,303.41,63,light rain
+59,302.51,67,light rain
+60,301.52,75,light rain
+61,301.52,75,thunderstorm
+62,299.72,87,moderate rain
+63,299.67,87,moderate rain
+64,299.67,87,thunderstorm
+65,299.67,87,moderate rain
+66,297.01,96,thunderstorm with light rain
+67,297.01,96,light rain
+68,298.02,94,moderate rain
+69,298.02,94,light rain
+70,298.02,94,scattered clouds
+71,298.07,94,scattered clouds
+72,298.07,96,light rain
+73,298.64,91,light rain
+74,298.64,91,light rain
+75,299.15,86,light rain
+76,300.56,82,light rain
+77,302.24,77,light rain
+78,303.3,68,broken clouds
+79,303.85,64,broken clouds
+80,303.52,64,light rain
+81,300.98,84,light intensity shower rain
+82,300.29,86,thunderstorm with light rain
+83,300.29,86,light rain
+84,299.08,94,thunderstorm with rain
+85,297.72,97,thunderstorm with heavy rain
+86,298.5,94,light rain
+87,298.81,91,broken clouds
+88,298.15,94,broken clouds
+89,298.84,91,broken clouds
+90,298.84,91,broken clouds
+91,298.84,91,broken clouds
+92,298.88,89,broken clouds
+93,298.33,94,broken clouds
+94,298.33,92,light rain
+95,298.29,90,light rain
+96,298.29,86,broken clouds
+97,298.26,86,broken clouds
+98,298.83,83,light rain
+99,298.26,86,light rain
+100,299.41,80,light rain
+101,301.18,70,broken clouds
+102,301.18,70,scattered clouds
+103,301.7,71,light rain
+104,303.61,61,light rain
+105,304.15,59,light rain
+106,304.23,59,broken clouds
+107,303.84,62,light rain
+108,301.41,78,thunderstorm with light rain
+109,301.41,78,light rain
+110,298.89,94,thunderstorm with light rain
+111,298.89,94,light rain
+112,299.07,91,thunderstorm with light rain
+113,298.64,93,broken clouds
+114,298.64,91,broken clouds
+115,298.61,91,broken clouds
+116,298.61,91,broken clouds
+117,298.38,94,broken clouds
+118,298.07,98,light rain
+119,298.64,91,light rain
+120,298.07,94,light rain
+121,298.07,94,broken clouds
+122,298.07,94,broken clouds
+123,298.07,98,light rain
+124,298.07,98,light rain
+125,298.09,100,moderate rain
+126,300.16,85,broken clouds
+127,302.15,72,broken clouds
+128,303.08,68,light rain
+129,303.17,69,light rain
+130,304.17,63,light intensity shower rain
+131,301.85,82,light intensity shower rain
+132,303.81,66,scattered clouds
+133,304.15,71,scattered clouds
+134,304.97,57,scattered clouds
+135,302.59,72,broken clouds
+136,301.22,81,light intensity shower rain
+137,300.21,81,thunderstorm
+138,299.42,90,light intensity shower rain
+139,300.16,92,light rain
+140,300.2,90,light intensity shower rain
+141,299.42,90,light rain
+142,299.46,94,light rain
+143,299.94,92,light rain
+144,300.2,88,moderate rain
+145,300.15,90,moderate rain
+146,299.46,90,light intensity shower rain
+147,299.15,92,thunderstorm
+148,299.15,92,light rain
+149,298.26,94,thunderstorm with rain
+150,298.26,94,light rain
+151,298.06,94,thunderstorm with rain
+152,298.06,94,moderate rain
+153,298.29,92,moderate rain
+154,298.84,89,moderate rain
+155,298.96,89,moderate rain
+156,299.05,89,light rain
+157,299.89,81,light rain
+158,300.29,81,light rain
+159,299.9,78,light rain
+160,298.82,83,moderate rain
+161,298.3,92,light rain
+162,298.84,89,light rain
+163,298.84,89,light rain
+164,298.84,89,light rain
+165,299.1,86,light rain
+166,298.84,89,broken clouds
+167,299.1,86,sky is clear
+168,299.1,86,broken clouds
+169,299.1,86,broken clouds
+170,299.15,90,broken clouds
+171,299.15,86,broken clouds
+172,298.29,92,broken clouds
+173,298.56,88,broken clouds
+174,298.55,90,broken clouds
+175,298.29,92,broken clouds
+176,298.29,92,broken clouds
+177,299.58,89,broken clouds
+178,301.96,76,broken clouds
+179,302.07,74,broken clouds
+180,302.93,72,broken clouds
+181,303.07,70,broken clouds
+182,303.63,68,broken clouds
+183,303.04,68,broken clouds
+184,302.92,70,moderate rain
+185,302.82,70,moderate rain
+186,296.36,94,thunderstorm with heavy rain
+187,296.36,94,moderate rain
+188,297.01,94,thunderstorm with rain
+189,297.01,94,light rain
+190,297.06,96,heavy intensity rain
+191,297.32,98,light rain
+192,298.06,94,moderate rain
+193,298.06,94,moderate rain
+194,297.06,94,light rain
+195,297.79,93,broken clouds
+196,297,94,moderate rain
+197,297,90,broken clouds
+198,296.27,92,broken clouds
+199,296.27,92,broken clouds
+200,297,88,light rain
+201,296.96,90,light rain
+202,296.96,90,light rain
+203,297.01,94,light rain
+204,298.07,85,light rain
+205,298.84,78,broken clouds
+206,300.29,76,broken clouds
+207,300.95,74,broken clouds
+208,301.88,70,broken clouds
+209,302.1,70,broken clouds
+210,302.01,72,broken clouds
+211,302.01,74,broken clouds
+212,301.48,76,broken clouds
+213,301.26,76,broken clouds
+214,300.9,78,broken clouds
+215,299.89,85,broken clouds
+216,299.89,83,broken clouds
+217,299.9,83,broken clouds
+218,299.62,85,broken clouds
+219,299.9,83,broken clouds
+220,299.15,86,broken clouds
+221,299.1,86,broken clouds
+222,299.1,86,broken clouds
+223,298.83,89,broken clouds
+224,298.06,94,broken clouds
+225,298.06,94,broken clouds
+226,298.06,94,broken clouds
+227,299.1,86,broken clouds
+228,302.15,70,broken clouds
+229,302.68,71,broken clouds
+230,304.05,60,scattered clouds
+231,304.98,57,scattered clouds
+232,304.89,55,scattered clouds
+233,304.85,54,broken clouds
+234,304.42,57,broken clouds
+235,303.93,58,thunderstorm
+236,303.74,58,thunderstorm
+237,302.83,64,broken clouds
+238,301.26,78,light intensity shower rain
+239,301.26,76,scattered clouds
+240,300.99,78,broken clouds
+241,300.94,78,broken clouds
+242,300.63,80,broken clouds
+243,300.94,78,broken clouds
+244,299.94,83,broken clouds
+245,299.84,83,broken clouds
+246,298.84,89,broken clouds
+247,299.1,92,broken clouds
+248,298.84,94,broken clouds
+249,298.8,92,broken clouds
+250,298.29,96,broken clouds
+251,300.15,86,broken clouds
+252,301.32,81,broken clouds
+253,302.94,70,broken clouds
+254,303.76,62,broken clouds
+255,304.47,60,broken clouds
+256,304.77,55,broken clouds
+257,305.29,54,broken clouds
+258,305.81,50,broken clouds
+259,305.66,52,broken clouds
+260,304.69,51,broken clouds
+261,303.84,57,broken clouds
+262,303.06,64,broken clouds
+263,301.57,77,broken clouds
+264,300.52,85,broken clouds
+265,301.26,81,scattered clouds
+266,301.26,81,broken clouds
+267,301.26,87,broken clouds
+268,300.25,89,broken clouds
+269,300.94,89,haze
+270,300.2,90,broken clouds
+271,300.2,90,broken clouds
+272,300.94,83,thunderstorm
+273,300.94,83,scattered clouds
+274,300.2,90,broken clouds
+275,301.21,85,broken clouds
+276,298.09,81,light intensity shower rain
+277,299.33,70,broken clouds
+278,300.16,69,broken clouds
+279,301.34,66,light rain
+280,301.34,70,light rain
+281,301.34,70,broken clouds
+282,301.96,68,broken clouds
+283,302.01,70,broken clouds
+284,301.22,75,broken clouds
+285,301.22,75,broken clouds
+286,301.17,75,broken clouds
+287,300.43,78,broken clouds
+288,300.21,81,broken clouds
+289,300.16,81,broken clouds
+290,300.16,86,broken clouds
+291,300.21,86,broken clouds
+292,299.42,88,broken clouds
+293,299.42,85,broken clouds
+294,299.15,86,broken clouds
+295,299.2,86,broken clouds
+296,299.15,86,broken clouds
+297,299.15,86,broken clouds
+298,299.15,86,broken clouds
+299,300.2,81,scattered clouds
+300,301.88,74,broken clouds
+301,303.7,64,broken clouds
+302,304.78,60,broken clouds
+303,305.22,57,broken clouds
+304,305.76,54,broken clouds
+305,305.65,55,broken clouds
+306,305.58,54,broken clouds
+307,305.58,55,broken clouds
+308,304.89,55,broken clouds
+309,304.28,55,broken clouds
+310,303.29,63,broken clouds
+311,303.06,64,broken clouds
+312,302.32,68,broken clouds
+313,302,72,broken clouds
+314,302,74,broken clouds
+315,301.26,76,broken clouds
+316,301.26,75,broken clouds
+317,300.2,80,broken clouds
+318,300.2,75,broken clouds
+319,300.2,71,broken clouds
+320,300.2,71,broken clouds
+321,299.94,72,broken clouds
+322,299.9,72,broken clouds
+323,301.21,67,sky is clear
+324,302.46,71,broken clouds
+325,303.69,67,broken clouds
+326,304.09,64,broken clouds
+327,304.13,59,scattered clouds
+328,304.91,58,broken clouds
+329,305.21,58,scattered clouds
+330,305,59,broken clouds
+331,304.31,59,broken clouds
+332,304.1,59,broken clouds
+333,303.29,67,broken clouds
+334,303.06,68,broken clouds
+335,302.32,69,broken clouds
+336,302.32,71,broken clouds
+337,302.32,71,broken clouds
+338,301.53,75,broken clouds
+339,302.22,76,broken clouds
+340,301.17,81,broken clouds
+341,301.22,81,light rain
+342,300.48,85,light rain
+343,300.16,86,broken clouds
+344,300.16,85,light rain
+345,300.16,86,broken clouds
+346,300.16,86,broken clouds
+347,301.95,79,broken clouds
+348,302.86,70,broken clouds
+349,303.76,64,light rain
+350,304.69,56,broken clouds
+351,305.31,55,broken clouds
+352,305.83,54,broken clouds
+353,305.83,52,broken clouds
+354,305.91,52,broken clouds
+355,305.91,52,broken clouds
+356,305.83,50,broken clouds
+357,304.85,58,broken clouds
+358,303.22,67,broken clouds
+359,303.02,66,broken clouds
+360,303.01,68,sky is clear
+361,302.01,79,scattered clouds
+362,302,79,scattered clouds
+363,302,79,scattered clouds
+364,302,79,scattered clouds
+365,302,79,sky is clear
+366,300.95,80,sky is clear
+367,300.94,83,scattered clouds
+368,300.94,83,scattered clouds
+369,300.94,80,few clouds
+370,300.8,80,broken clouds
+371,301.78,79,broken clouds
+372,302.86,62,broken clouds
+373,303.54,58,broken clouds
+374,303.76,59,broken clouds
+375,305.2,48,broken clouds
+376,305.74,46,broken clouds
+377,305.83,51,broken clouds
+378,304.99,56,broken clouds
+379,305.92,52,broken clouds
+380,305.31,52,broken clouds
+381,304.85,56,broken clouds
+382,303.81,60,broken clouds
+383,303.02,70,broken clouds
+384,302.27,72,broken clouds
+385,302,76,broken clouds
+386,302,79,broken clouds
+387,302,79,broken clouds
+388,301.99,79,broken clouds
+389,301.26,83,broken clouds
+390,301.99,84,broken clouds
+391,301.68,83,broken clouds
+392,300.94,85,broken clouds
+393,300.94,83,broken clouds
+394,300.94,83,light rain
+395,302,84,broken clouds
+396,303.06,74,broken clouds
+397,303.07,72,broken clouds
+398,303.84,68,broken clouds
+399,304.3,62,broken clouds
+400,300.01,88,thunderstorm with light rain
+401,302.27,81,broken clouds
+402,301.51,78,broken clouds
+403,300.51,81,scattered clouds
+404,299.51,89,light rain
+405,299.04,89,light rain
+406,299.05,94,light rain
+407,299.46,91,broken clouds
+408,299.84,89,light rain
+409,299.84,89,broken clouds
+410,299.84,89,broken clouds
+411,300.11,86,broken clouds
+412,300.16,85,broken clouds
+413,300.2,81,broken clouds
+414,300.2,80,broken clouds
+415,299.42,81,broken clouds
+416,299.1,85,broken clouds
+417,298.38,88,broken clouds
+418,298.84,89,broken clouds
+419,300.2,81,sky is clear
+420,302.24,71,broken clouds
+421,303.3,60,scattered clouds
+422,304.59,53,broken clouds
+423,304.69,53,broken clouds
+424,304.58,52,scattered clouds
+425,305.8,45,broken clouds
+426,305.9,46,broken clouds
+427,305.8,47,scattered clouds
+428,304.99,50,broken clouds
+429,304.89,55,broken clouds
+430,303.81,58,broken clouds
+431,303.02,68,sky is clear
+432,302.97,68,broken clouds
+433,302.23,67,broken clouds
+434,302.22,68,broken clouds
+435,302,74,broken clouds
+436,301.96,74,broken clouds
+437,301.21,76,broken clouds
+438,300.89,80,broken clouds
+439,300.16,86,broken clouds
+440,299.93,89,broken clouds
+441,299.89,92,broken clouds
+442,300.42,90,broken clouds
+443,301.99,82,broken clouds
+444,303.31,70,broken clouds
+445,303.48,72,broken clouds
+446,304.63,66,broken clouds
+447,304.75,62,broken clouds
+448,305.81,58,broken clouds
+449,305.66,55,broken clouds
+450,305.9,56,broken clouds
+451,304.69,62,broken clouds
+452,304.1,67,broken clouds
+453,302.53,75,light intensity shower rain
+454,302.52,75,broken clouds
+455,302.27,78,broken clouds
+456,301.53,82,broken clouds
+457,301.21,87,broken clouds
+458,301.21,87,scattered clouds
+459,301.21,87,broken clouds
+460,300.99,89,sky is clear
+461,300.94,85,sky is clear
+462,300.16,86,sky is clear
+463,299.94,89,sky is clear
+464,300.2,90,broken clouds
+465,300.2,86,broken clouds
+466,300.94,83,broken clouds
+467,302.26,77,broken clouds
+468,302.92,74,broken clouds
+469,303.81,68,broken clouds
+470,303.55,67,broken clouds
+471,302.27,75,scattered clouds
+472,304.63,64,broken clouds
+473,305.28,53,broken clouds
+474,305.64,55,broken clouds
+475,305.69,53,broken clouds
+476,305.22,56,broken clouds
+477,303.3,64,broken clouds
+478,303.02,70,broken clouds
+479,301.96,77,broken clouds
+480,301.96,76,broken clouds
+481,302,76,broken clouds
+482,301.96,74,broken clouds
+483,301.95,74,broken clouds
+484,301.95,74,broken clouds
+485,301.17,76,broken clouds
+486,301.16,76,broken clouds
+487,300.42,85,broken clouds
+488,300.89,81,broken clouds
+489,299.99,86,overcast clouds
+490,300.86,85,overcast clouds
+491,301.97,79,overcast clouds
+492,302.84,74,overcast clouds
+493,303.67,70,overcast clouds
+494,304.31,64,light rain
+495,305.17,61,light rain
+496,304.62,62,broken clouds
+497,304.87,62,broken clouds
+498,305.45,58,broken clouds
+499,304.99,61,broken clouds
+500,304.58,60,broken clouds
+501,303.84,62,broken clouds
+502,303.02,68,broken clouds
+503,303.02,70,broken clouds
+504,303.01,72,broken clouds
+505,302.01,76,broken clouds
+506,302,79,broken clouds
+507,302,79,broken clouds
+508,301.95,79,broken clouds
+509,301.99,77,light rain
+510,301.95,74,broken clouds
+511,301.21,76,broken clouds
+512,300.94,78,broken clouds
+513,300.89,80,broken clouds
+514,300.93,83,broken clouds
+515,299.11,71,scattered clouds
+516,301.64,67,scattered clouds
+517,303.62,56,scattered clouds
+518,303.81,62,few clouds
+519,304.86,58,scattered clouds
+520,305.74,51,scattered clouds
+521,305.74,49,scattered clouds
+522,306.18,51,scattered clouds
+523,306.45,52,scattered clouds
+524,305.47,60,scattered clouds
+525,303.82,68,few clouds
+526,303.27,64,few clouds
+527,303.07,66,scattered clouds
+528,303.01,70,broken clouds
+529,302.01,76,broken clouds
+530,302,79,broken clouds
+531,302,79,broken clouds
+532,301.99,79,broken clouds
+533,301.26,81,broken clouds
+534,301.26,81,broken clouds
+535,300.94,83,broken clouds
+536,300.99,83,broken clouds
+537,300.94,83,broken clouds
+538,301.21,83,broken clouds
+539,301.99,81,broken clouds
+540,303.06,74,broken clouds
+541,304.86,66,broken clouds
+542,304.85,59,broken clouds
+543,304.88,59,broken clouds
+544,305.57,58,broken clouds
+545,305.22,59,broken clouds
+546,305.67,55,broken clouds
+547,305.44,59,broken clouds
+548,302.55,71,broken clouds
+549,302.54,69,broken clouds
+550,302.32,71,broken clouds
+551,302.31,72,broken clouds
+552,301.21,76,sky is clear
+553,301.26,78,sky is clear
+554,300.94,83,sky is clear
+555,300.99,83,sky is clear
+556,301.26,81,sky is clear
+557,300.99,85,sky is clear
+558,300.25,90,broken clouds
+559,300.15,86,broken clouds
+560,300.15,89,broken clouds
+561,299.89,89,broken clouds
+562,299.89,94,broken clouds
+563,300.2,92,broken clouds
+564,302,84,broken clouds
+565,303.3,75,broken clouds
+566,304.28,67,broken clouds
+567,306.64,50,light rain
+568,304.68,62,moderate rain
+569,302.27,65,broken clouds
+570,298.04,96,thunderstorm with heavy rain
+571,298.04,96,light rain
+572,300.02,86,light rain
+573,299.45,89,light rain
+574,299.42,91,light rain
+575,299.84,85,light rain
+576,298.84,91,light rain
+577,298.29,90,light rain
+578,298.29,96,broken clouds
+579,298.84,91,broken clouds
+580,298.59,85,overcast clouds
+581,298.83,83,light rain
+582,298.83,85,broken clouds
+583,298.06,94,broken clouds
+584,298.06,94,broken clouds
+585,298.01,94,broken clouds
+586,298.06,94,broken clouds
+587,298.06,94,broken clouds
+588,300.2,81,broken clouds
+589,301.21,67,broken clouds
+590,302.86,64,broken clouds
+591,303.3,62,broken clouds
+592,303.1,64,scattered clouds
+593,303.14,64,light intensity shower rain
+594,302.4,72,light rain
+595,299.54,89,heavy intensity rain
+596,299.9,86,light rain
+597,300.22,80,broken clouds
+598,300.95,77,broken clouds
+599,299.95,83,broken clouds
+600,299.94,83,broken clouds
+601,299.89,89,light rain
+602,299.89,89,light rain
+603,299.9,89,broken clouds
+604,299.9,89,broken clouds
+605,299.9,89,broken clouds
+606,299.1,89,broken clouds
+607,299.15,83,light rain
+608,298.84,89,light rain
+609,298.84,89,moderate rain
+610,298.38,91,moderate rain
+611,298.09,94,broken clouds
+612,300.94,80,broken clouds
+613,302,77,scattered clouds
+614,303.34,69,broken clouds
+615,303.76,66,broken clouds
+616,304.77,58,broken clouds
+617,304.77,58,broken clouds
+618,304.07,64,scattered clouds
+619,302.49,72,broken clouds
+620,304.22,62,broken clouds
+621,303.31,68,broken clouds
+622,303.01,72,broken clouds
+623,302,77,broken clouds
+624,301.99,79,broken clouds
+625,301.21,75,broken clouds
+626,301.26,75,broken clouds
+627,301.21,76,light rain
+628,300.99,83,light rain
+629,300.99,83,light rain
+630,300.94,83,light rain
+631,300.94,86,broken clouds
+632,300.94,85,light rain
+633,300.2,86,broken clouds
+634,300.15,86,light rain
+635,300.2,86,light rain
+636,301.14,81,moderate rain
+637,303.29,68,moderate rain
+638,303.08,72,moderate rain
+639,299.36,84,thunderstorm with heavy rain
+640,299.36,84,moderate rain
+641,298.03,94,light rain
+642,298.03,94,thunderstorm with light rain
+643,298.02,94,thunderstorm with light rain
+644,298.02,94,light rain
+645,298.04,88,light intensity shower rain
+646,298.06,90,moderate rain
+647,298.01,90,moderate rain
+648,298.83,89,light rain
+649,298.83,83,scattered clouds
+650,298.29,88,broken clouds
+651,298.09,90,broken clouds
+652,298.06,90,broken clouds
+653,298.29,86,broken clouds
+654,298.29,90,light rain
+655,298.29,92,broken clouds
+656,298.29,92,broken clouds
+657,298.29,90,broken clouds
+658,298.09,94,light rain
+659,298.09,94,light rain
+660,298.09,94,few clouds
+661,298.06,94,scattered clouds
+662,298.06,94,light rain
+663,299.1,86,broken clouds
+664,300.9,78,broken clouds
+665,301.73,75,broken clouds
+666,303.17,68,broken clouds
+667,303.7,66,broken clouds
+668,304.5,62,broken clouds
+669,303.7,62,broken clouds
+670,299.74,97,thunderstorm with heavy rain
+671,298.92,91,light intensity shower rain
+672,298.89,89,broken clouds
+673,298.84,85,broken clouds
+674,298.07,94,broken clouds
+675,298.09,94,broken clouds
+676,298.61,91,broken clouds
+677,298.83,89,broken clouds
+678,298.61,91,broken clouds
+679,298.06,94,broken clouds
+680,298.63,91,broken clouds
+681,298.83,89,broken clouds
+682,298.63,91,broken clouds
+683,298.63,91,broken clouds
+684,298.09,94,broken clouds
+685,298.63,91,broken clouds
+686,298.09,96,broken clouds
+687,298.84,91,broken clouds
+688,300.21,83,broken clouds
+689,301.4,81,broken clouds
+690,303.06,70,broken clouds
+691,304.84,57,light rain
+692,304.97,57,light rain
+693,304.15,67,broken clouds
+694,304.22,60,broken clouds
+695,302.51,68,scattered clouds
+696,302.68,70,broken clouds
+697,300.84,79,scattered clouds
+698,299.46,86,scattered clouds
+699,299.14,86,broken clouds
+700,299.09,86,broken clouds
+701,299.1,86,broken clouds
+702,299.1,86,broken clouds
+703,299.1,86,broken clouds
+704,298.83,89,broken clouds
+705,298.83,89,broken clouds
+706,298.83,89,broken clouds
+707,298.83,85,light rain
+708,298.26,92,light rain
+709,298.06,94,broken clouds
+710,298.06,94,broken clouds
+711,299.1,89,broken clouds
+712,300.21,81,broken clouds
+713,302.32,72,broken clouds
+714,303.6,63,scattered clouds
+715,303.37,62,scattered clouds
+716,302.61,66,scattered clouds
+717,304.37,59,thunderstorm
+718,303.21,68,scattered clouds
+719,302.69,70,light intensity shower rain
+720,302.06,77,light intensity shower rain
+721,300.15,82,light intensity shower rain
+722,299.1,89,light rain
+723,299.1,86,scattered clouds
+724,298.84,92,broken clouds
+725,299.1,86,broken clouds
+726,299.14,86,broken clouds
+727,298.83,89,light rain
+728,298.29,92,broken clouds
+729,298.29,92,broken clouds
+730,298.26,92,broken clouds
+731,298.29,92,broken clouds
+732,298.83,83,broken clouds
+733,298.29,90,broken clouds
+734,298.09,94,haze
+735,299.1,81,moderate rain
+736,299.42,81,light rain
+737,301.56,72,broken clouds
+738,303.55,64,broken clouds
+739,304.96,60,broken clouds
+740,304.89,59,broken clouds
+741,304.9,55,broken clouds
+742,304.25,58,light intensity shower rain
+743,303.38,67,scattered clouds
+744,300.16,78,scattered clouds
+745,299.42,80,light rain
+746,299.1,81,light rain
+747,299.1,81,broken clouds
+748,299.1,81,sky is clear
+749,299.1,85,sky is clear
+750,298.84,86,sky is clear
+751,298.84,85,sky is clear
+752,298.8,85,sky is clear
+753,298.8,86,sky is clear
+754,298.26,90,sky is clear
+755,298.8,83,moderate rain
+756,298.09,88,moderate rain
+757,298.01,88,sky is clear
+758,298.01,92,scattered clouds
+759,300.2,81,broken clouds
+760,301.89,74,broken clouds
+761,303.79,64,broken clouds
+762,303.62,64,light rain
+763,303.92,67,moderate rain
+764,300.47,86,light rain
+765,300.77,88,light intensity shower rain
+766,302.44,76,light rain
+767,301.54,81,broken clouds
+768,301.41,79,broken clouds
+769,301.17,80,light rain
+770,300.17,85,light rain
+771,299.84,89,light rain
+772,299.58,91,moderate rain
+773,299.1,92,light rain
+774,298.84,94,broken clouds
+775,299.04,94,broken clouds
+776,298.81,94,broken clouds
+777,298.8,91,broken clouds
+778,298.8,91,broken clouds
+779,298.61,91,broken clouds
+780,298.06,94,light rain
+781,298.61,91,light rain
+782,298.26,92,light rain
+783,300.6,81,light rain
+784,301.32,76,broken clouds
+785,303.17,66,broken clouds
+786,304.69,63,broken clouds
+787,304.83,60,light rain
+788,305.3,57,broken clouds
+789,304.44,66,scattered clouds
+790,301.55,75,thunderstorm with light rain
+791,301.81,72,scattered clouds
+792,304.09,61,broken clouds
+793,302.46,72,broken clouds
+794,301.27,78,light rain
+795,301.26,78,light rain
+796,300.16,83,broken clouds
+797,300.16,83,broken clouds
+798,299.9,86,light rain
+799,299.9,85,broken clouds
+800,299.15,89,scattered clouds
+801,299.15,89,light rain
+802,299.1,89,broken clouds
+803,299.1,86,light rain
+804,299.1,89,light rain
+805,299.15,86,light rain
+806,298.29,88,light intensity shower rain
+807,298.29,86,light rain
+808,300.42,77,few clouds
+809,302.29,68,few clouds
+810,302.62,69,scattered clouds
+811,303.84,64,light rain
+812,304.23,61,scattered clouds
+813,305.2,57,few clouds
+814,305.83,48,few clouds
+815,306.27,48,few clouds
+816,305.69,48,few clouds
+817,304.86,54,broken clouds
+818,303.76,58,sky is clear
+819,303.26,59,sky is clear
+820,302.27,65,broken clouds
+821,301.95,68,broken clouds
+822,300.99,78,broken clouds
+823,301.26,76,broken clouds
+824,300.15,85,broken clouds
+825,300.15,81,light rain
+826,299.89,81,heavy intensity rain
+827,300.15,81,heavy intensity rain
+828,300.15,86,light rain
+829,299.89,89,broken clouds
+830,299.93,89,broken clouds
+831,300.94,85,broken clouds
+832,300.11,84,thunderstorm with heavy rain
+833,300.25,78,thunderstorm with light rain
+834,300.02,75,broken clouds
+835,301.5,73,light rain
+836,301.57,74,light rain
+837,301.97,72,light rain
+838,302.02,72,broken clouds
+839,302.02,70,broken clouds
+840,301.67,72,light rain
+841,300.96,76,moderate rain
+842,300.9,74,moderate rain
+843,300.95,74,light rain
+844,300.95,69,light rain
+845,300.95,74,moderate rain
+846,300.2,76,moderate rain
+847,300.2,75,moderate rain
+848,300.68,76,light rain
+849,299.94,76,light rain
+850,299.89,78,broken clouds
+851,299.15,86,broken clouds
+852,299.1,86,broken clouds
+853,298.88,89,sky is clear
+854,299.1,86,light rain
+855,300.15,83,broken clouds
+856,301.1,78,broken clouds
+857,302.24,77,broken clouds
+858,302.86,72,broken clouds
+859,304.15,67,broken clouds
+860,304.77,58,broken clouds
+861,304.91,57,broken clouds
+862,305.39,58,broken clouds
+863,304.38,60,broken clouds
+864,303.27,68,broken clouds
+865,303.07,70,broken clouds
+866,302.06,74,broken clouds
+867,302.27,72,broken clouds
+868,301.27,76,broken clouds
+869,302,76,broken clouds
+870,302,77,light rain
+871,300.99,81,broken clouds
+872,300.99,80,broken clouds
+873,300.94,81,light rain
+874,300.16,85,thunderstorm with light rain
+875,299.84,87,light intensity shower rain
+876,299.08,98,moderate rain
+877,298.81,85,light rain
+878,298.84,89,light rain
+879,299.89,85,broken clouds
+880,301.27,81,broken clouds
+881,303.07,72,light rain
+882,304.05,61,moderate rain
+883,304.68,57,moderate rain
+884,305.2,55,light rain
+885,305.2,57,light rain
+886,304.88,62,light rain
+887,301.17,72,light intensity shower rain
+888,301.27,69,broken clouds
+889,302.27,74,broken clouds
+890,302.26,72,broken clouds
+891,301.25,76,light rain
+892,301.25,78,moderate rain
+893,300.42,80,moderate rain
+894,300.89,83,light rain
+895,300.15,83,light rain
+896,299.89,85,moderate rain
+897,299.86,83,overcast clouds
+898,299.84,83,light rain
+899,299.1,86,broken clouds
+900,299.1,86,broken clouds
+901,298.88,92,broken clouds
+902,298.83,92,broken clouds
+903,301.21,80,broken clouds
+904,302.24,75,broken clouds
+905,303.3,68,broken clouds
+906,304.61,57,broken clouds
+907,304.23,58,broken clouds
+908,303.79,65,broken clouds
+909,302.73,74,thunderstorm with light rain
+910,301.51,81,light intensity shower rain
+911,302.15,71,scattered clouds
+912,299.9,85,light rain
+913,299.94,81,light rain
+914,298.83,83,light intensity shower rain
+915,298.8,89,light rain
+916,298.61,91,moderate rain
+917,298.61,91,moderate rain
+918,298.8,91,broken clouds
+919,298.8,91,broken clouds
+920,298.61,93,broken clouds
+921,298.61,91,broken clouds
+922,298.61,91,moderate rain
+923,298.8,89,moderate rain
+924,298.83,86,moderate rain
+925,298.88,85,moderate rain
+926,298.83,83,light rain
+927,299.15,86,moderate rain
+928,299.89,83,moderate rain
+929,300.21,81,moderate rain
+930,301.73,72,light rain
+931,303.22,68,light rain
+932,303.58,64,light rain
+933,299.42,84,thunderstorm with rain
+934,299.42,84,light rain
+935,298.81,85,thunderstorm with light rain
+936,298.81,85,moderate rain
+937,298.84,85,moderate rain
+938,299.9,83,moderate rain
+939,299.9,89,light rain
+940,298.89,89,light rain
+941,298.81,89,broken clouds
+942,298.84,89,light rain
+943,298.38,91,broken clouds
+944,298.38,91,broken clouds
+945,298.61,94,light rain
+946,298.06,94,light rain
+947,298.06,94,moderate rain
+948,298.06,94,light rain
+949,298.06,92,light rain
+950,298.06,92,light rain
+951,298.08,88,sky is clear
+952,298.06,88,light rain
+953,299.1,85,light rain
+954,300.96,75,light rain
+955,302.4,71,moderate rain
+956,303.36,68,moderate rain
+957,303.83,62,moderate rain
+958,303.89,62,moderate rain
+959,300.69,76,light intensity shower rain
+960,297.89,95,thunderstorm with rain
+961,297.89,95,moderate rain
+962,298.04,96,moderate rain
+963,298.69,86,light rain
+964,298.07,90,light rain
+965,298.07,88,light rain
+966,298.06,90,light rain
+967,298.06,94,light rain
+968,298.07,94,light rain
+969,298.07,94,light rain
+970,298.07,88,light rain
+971,298.06,92,light rain
+972,298.06,94,light rain
+973,298.06,90,light rain
+974,298.06,94,light rain
+975,298.07,94,light rain
+976,298.06,94,light rain
+977,297.79,96,light rain
+978,298.29,92,light rain
+979,299.86,83,light rain
+980,301.26,76,light rain
+981,302.4,70,light rain
+982,303.36,66,moderate rain
+983,303,66,light intensity shower rain
+984,303,66,moderate rain
+985,303.74,62,broken clouds
+986,303.54,64,broken clouds
+987,298.93,91,thunderstorm with heavy rain
+988,298.93,91,light rain
+989,298.84,93,light rain
+990,298.84,91,broken clouds
+991,298.84,94,broken clouds
+992,298.84,94,broken clouds
+993,298.84,94,light rain
+994,299.58,87,light rain
+995,298.84,94,light rain
+996,298.84,94,broken clouds
+997,298.84,94,broken clouds
+998,298.84,94,light rain
+999,298.84,94,light intensity shower rain
+1000,298.81,91,moderate rain
+1001,298.09,94,broken clouds
+1002,298.09,94,broken clouds
+1003,299.15,89,broken clouds
+1004,300.21,83,broken clouds
+1005,301.88,74,light rain
+1006,303.36,66,light rain
+1007,304.59,63,moderate rain
+1008,305.11,58,light rain
+1009,304.97,60,broken clouds
+1010,303.76,66,scattered clouds
+1011,303.12,70,thunderstorm with light rain
+1012,303.12,70,light rain
+1013,297.61,100,thunderstorm with rain
+1014,298.1,94,broken clouds
+1015,298.07,94,scattered clouds
+1016,298.07,90,light rain
+1017,298.07,88,broken clouds
+1018,298.09,90,light rain
+1019,298.07,94,broken clouds
+1020,298.06,94,broken clouds
+1021,298.06,94,scattered clouds
+1022,298.06,94,light rain
+1023,298.06,94,broken clouds
+1024,298.06,92,broken clouds
+1025,298.09,94,broken clouds
+1026,297.27,95,broken clouds
+1027,297.32,98,broken clouds
+1028,300.15,81,broken clouds
+1029,301.61,77,light rain
+1030,303.17,69,light rain
+1031,304.36,62,light rain
+1032,303.84,66,light intensity shower rain
+1033,303.1,69,shower rain
+1034,299.7,88,light rain
+1035,299.7,88,thunderstorm with rain
+1036,298.98,94,thunderstorm with rain
+1037,298.98,94,light rain
+1038,298.09,97,light rain
+1039,298.09,97,thunderstorm with rain
+1040,298.04,90,thunderstorm with light rain
+1041,298.04,90,light rain
+1042,298.04,90,moderate rain
+1043,298.04,90,light rain
+1044,298.06,94,light rain
+1045,298.06,94,light rain
+1046,298.06,94,light rain
+1047,298.06,94,light rain
+1048,298.06,94,broken clouds
+1049,298.06,94,broken clouds
+1050,298.06,94,broken clouds
+1051,297.32,98,broken clouds
+1052,297.32,98,scattered clouds
+1053,297.01,100,broken clouds
+1054,297,100,broken clouds
+1055,297,100,broken clouds
+1056,299.15,92,broken clouds
+1057,301.61,76,light rain
+1058,302.46,77,broken clouds
+1059,303.81,70,broken clouds
+1060,303.43,73,broken clouds
+1061,303.63,73,light intensity shower rain
+1062,302.54,82,light intensity shower rain
+1063,304.79,68,broken clouds
+1064,305.41,63,broken clouds
+1065,304.46,63,broken clouds
+1066,304.13,65,broken clouds
+1067,300.21,82,light intensity shower rain
+1068,299.11,86,broken clouds
+1069,299.85,85,broken clouds
+1070,299.58,91,broken clouds
+1071,299.58,91,broken clouds
+1072,299.58,91,broken clouds
+1073,298.84,94,haze
+1074,298.84,94,mist
+1075,298.84,91,broken clouds
+1076,298.88,94,haze
+1077,298.84,94,haze
+1078,298.88,94,mist
+1079,298.84,94,mist
+1080,299.94,91,haze
+1081,302.24,77,haze
+1082,303.57,66,light rain
+1083,299.65,94,thunderstorm with rain
+1084,301.87,83,scattered clouds
+1085,301.47,81,light rain
+1086,302.39,77,light rain
+1087,301.5,81,broken clouds
+1088,301.47,83,broken clouds
+1089,301.47,83,broken clouds
+1090,300.95,83,broken clouds
+1091,300.68,85,broken clouds
+1092,299.9,89,broken clouds
+1093,299.15,89,broken clouds
+1094,299.1,92,broken clouds
+1095,299.15,92,broken clouds
+1096,299.1,89,broken clouds
+1097,298.84,91,broken clouds
+1098,298.84,91,broken clouds
+1099,298.64,91,light rain
+1100,298.09,94,moderate rain
+1101,298.09,94,light rain
+1102,298.84,89,shower rain
+1103,298.29,92,broken clouds
+1104,299.15,86,broken clouds
+1105,299.8,84,light intensity shower rain
+1106,302.18,71,broken clouds
+1107,301.88,74,broken clouds
+1108,300.91,85,light rain
+1109,300.61,88,light rain
+1110,300.91,80,broken clouds
+1111,301.59,78,broken clouds
+1112,301.88,76,broken clouds
+1113,302.01,74,scattered clouds
+1114,301.74,77,light rain
+1115,300.64,85,light rain
+1116,299.89,89,light rain
+1117,299.89,89,broken clouds
+1118,299.58,91,broken clouds
+1119,298.89,94,broken clouds
+1120,299.62,91,broken clouds
+1121,299.9,89,broken clouds
+1122,299.84,89,broken clouds
+1123,299.57,91,broken clouds
+1124,299.57,91,light rain
+1125,298.84,94,broken clouds
+1126,298.84,94,light rain
+1127,298.09,100,moderate rain
+1128,301.1,81,moderate rain
+1129,301.99,76,moderate rain
+1130,303.17,77,light rain
+1131,303.44,71,light rain
+1132,305.12,64,light rain
+1133,304.77,60,light rain
+1134,304.47,64,light rain
+1135,298.64,93,thunderstorm with light rain
+1136,298.64,93,moderate rain
+1137,299.01,90,thunderstorm with light rain
+1138,299.01,90,moderate rain
+1139,297.84,94,thunderstorm with rain
+1140,298.05,97,light rain
+1141,298.04,94,light rain
+1142,298.07,94,light rain
+1143,298.07,94,light rain
+1144,298.09,94,light rain
+1145,298.64,91,light rain
+1146,298.84,89,light rain
+1147,298.29,92,moderate rain
+1148,298.09,94,light rain
+1149,298.38,89,broken clouds
+1150,298.07,94,sky is clear
+1151,298.07,90,sky is clear
+1152,298.09,94,sky is clear
+1153,298.29,92,light rain
+1154,299.23,86,light rain
+1155,300.12,81,light rain
+1156,300.12,81,light rain
+1157,300.16,74,moderate rain
+1158,301.43,72,light rain
+1159,301.34,70,light rain
+1160,299.9,80,light rain
+1161,299.89,83,moderate rain
+1162,298.89,89,heavy intensity rain
+1163,298.81,91,moderate rain
+1164,298.02,94,moderate rain
+1165,298.07,96,heavy intensity rain
+1166,298.07,100,moderate rain
+1167,298.07,96,moderate rain
+1168,298.06,93,light rain
+1169,297.06,94,light rain
+1170,297.06,94,light rain
+1171,297.32,94,light rain
+1172,298.06,90,light rain
+1173,298.06,90,light rain
+1174,298.06,94,light rain
+1175,298.06,94,light rain
+1176,298.15,93,light rain
+1177,298.29,92,broken clouds
+1178,299.1,86,broken clouds
+1179,300.12,79,broken clouds
+1180,301.94,74,broken clouds
+1181,303.07,71,broken clouds
+1182,302.83,67,broken clouds
+1183,304.03,63,broken clouds
+1184,304.26,63,broken clouds
+1185,303.98,62,broken clouds
+1186,303.17,64,broken clouds
+1187,302.68,65,light rain
+1188,301.27,75,light rain
+1189,301.27,71,light rain
+1190,300.63,82,light rain
+1191,299.84,91,moderate rain
+1192,298.84,94,moderate rain
+1193,298.15,94,moderate rain
+1194,298.07,94,moderate rain
+1195,298.07,94,moderate rain
+1196,298.06,94,light rain
+1197,296.99,88,light intensity shower rain
+1198,297.01,88,light rain
+1199,297.01,94,light rain
+1200,298.06,94,light rain
+1201,298.07,94,light rain
+1202,299.15,86,broken clouds
+1203,300.26,86,broken clouds
+1204,302.08,73,broken clouds
+1205,303.29,68,broken clouds
+1206,303.3,67,broken clouds
+1207,303.59,65,scattered clouds
+1208,304.21,57,broken clouds
+1209,303.83,66,broken clouds
+1210,304.01,59,light rain
+1211,303.66,60,broken clouds
+1212,302.29,68,broken clouds
+1213,301.26,75,broken clouds
+1214,301.21,74,light rain
+1215,300.94,76,broken clouds
+1216,300.15,80,broken clouds
+1217,300.2,80,broken clouds
+1218,299.46,83,broken clouds
+1219,299.2,80,light rain
+1220,299.14,81,light rain
+1221,299.14,85,light rain
+1222,299.15,81,light rain
+1223,299.1,80,moderate rain
+1224,297.09,90,light intensity shower rain
+1225,297.06,90,light rain
+1226,298.07,88,light rain
+1227,298.1,90,moderate rain
+1228,298.84,90,moderate rain
+1229,299.89,87,moderate rain
+1230,300.61,83,light rain
+1231,300.91,78,light rain
+1232,300.9,78,light rain
+1233,301.69,76,light rain
+1234,301.97,74,light rain
+1235,301.97,74,broken clouds
+1236,301.34,75,broken clouds
+1237,300.17,81,broken clouds
+1238,300.17,81,broken clouds
+1239,300.16,81,broken clouds
+1240,299.89,83,broken clouds
+1241,299.89,83,broken clouds
+1242,299.84,85,light rain
+1243,299.84,89,light rain
+1244,299.1,92,light rain
+1245,299.1,92,light rain
+1246,299.1,92,light rain
+1247,298.84,94,light rain
+1248,299.1,92,light rain
+1249,299.1,86,scattered clouds
+1250,299.41,86,light rain
+1251,300.47,80,broken clouds
+1252,301.29,67,broken clouds
+1253,302.95,66,broken clouds
+1254,304.09,59,broken clouds
+1255,305.3,56,broken clouds
+1256,305.85,54,broken clouds
+1257,305.81,53,broken clouds
+1258,304.85,58,broken clouds
+1259,304.38,64,broken clouds
+1260,301.79,66,broken clouds
+1261,301.53,73,broken clouds
+1262,300.16,80,broken clouds
+1263,300.17,81,light rain
+1264,300.17,81,light rain
+1265,300.9,78,light rain
+1266,300.9,83,broken clouds
+1267,299.9,89,broken clouds
+1268,299.9,89,light rain
+1269,299.84,89,light rain
+1270,299.84,89,light rain
+1271,299.84,86,light rain
+1272,298.84,92,broken clouds
+1273,298.84,94,broken clouds
+1274,299.89,89,light rain
+1275,302.32,77,broken clouds
+1276,303.16,71,light rain
+1277,303.76,68,light rain
+1278,303.69,70,light intensity shower rain
+1279,301.97,74,thunderstorm with light rain
+1280,301.65,77,thunderstorm with light rain
+1281,300,89,light rain
+1282,300.66,85,light rain
+1283,301.7,77,broken clouds
+1284,300.96,78,broken clouds
+1285,300.9,78,broken clouds
+1286,299.89,83,broken clouds
+1287,299.84,85,broken clouds
+1288,299.58,87,broken clouds
+1289,298.84,91,broken clouds
+1290,298.38,91,broken clouds
+1291,298.81,92,broken clouds
+1292,298.81,89,broken clouds
+1293,298.06,94,broken clouds
+1294,298.06,94,broken clouds
+1295,298.06,94,broken clouds
+1296,298.06,98,broken clouds
+1297,298.06,98,mist
+1298,300.15,86,broken clouds
+1299,301.8,79,broken clouds
+1300,303.08,70,broken clouds
+1301,303.74,65,broken clouds
+1302,303.75,67,broken clouds
+1303,305.49,58,broken clouds
+1304,303.89,66,scattered clouds
+1305,305.15,52,scattered clouds
+1306,302.43,70,broken clouds
+1307,302.26,73,scattered clouds
+1308,303.05,68,broken clouds
+1309,301.26,75,broken clouds
+1310,300.69,77,light rain
+1311,301.21,75,light rain
+1312,300.51,78,broken clouds
+1313,300.51,78,broken clouds
+1314,300.99,78,broken clouds
+1315,300.25,86,broken clouds
+1316,300.2,86,light rain
+1317,299.42,90,broken clouds
+1318,299.15,89,broken clouds
+1319,298.6,92,broken clouds
+1320,298.83,91,broken clouds
+1321,298.83,89,light rain
+1322,301.1,77,light rain
+1323,302.59,75,broken clouds
+1324,303.31,68,broken clouds
+1325,301.9,72,scattered clouds
+1326,301,79,thunderstorm with light rain
+1327,301.76,76,scattered clouds
+1328,304.23,63,broken clouds
+1329,304.52,59,light rain
+1330,304.33,58,light rain
+1331,303.31,66,light rain
+1332,301.21,81,light rain
+1333,300.6,83,light intensity shower rain
+1334,300.15,83,scattered clouds
+1335,300.2,83,light rain
+1336,300.15,86,moderate rain
+1337,300.15,81,light rain
+1338,299.89,89,light rain
+1339,299.84,89,moderate rain
+1340,299.89,89,moderate rain
+1341,299.88,89,light rain
+1342,299.57,87,light rain
+1343,298.84,89,light rain
+1344,298.84,89,broken clouds
+1345,299.23,89,light rain
+1346,299.77,86,light intensity shower rain
+1347,298.06,94,thunderstorm with heavy rain
+1348,297.05,94,thunderstorm with light rain
+1349,297.12,100,thunderstorm with light rain
+1350,298.41,92,light rain
+1351,300.84,81,light rain
+1352,302.46,65,broken clouds
+1353,303.14,64,broken clouds
+1354,303.22,64,broken clouds
+1355,302.32,68,broken clouds
+1356,302.01,70,broken clouds
+1357,301.04,70,broken clouds
+1358,300.16,80,broken clouds
+1359,299.84,81,broken clouds
+1360,299.1,86,broken clouds
+1361,298.84,89,broken clouds
+1362,299.15,85,broken clouds
+1363,298.88,86,broken clouds
+1364,298.81,86,broken clouds
+1365,298.07,92,broken clouds
+1366,298.38,88,broken clouds
+1367,298.81,86,broken clouds
+1368,298.83,83,broken clouds
+1369,298.61,85,broken clouds
+1370,299.77,83,broken clouds
+1371,302.27,67,light rain
+1372,302.76,65,broken clouds
+1373,304.29,61,broken clouds
+1374,304.5,58,broken clouds
+1375,303.98,63,light rain
+1376,304.16,61,broken clouds
+1377,304.94,58,light rain
+1378,304.05,59,light rain
+1379,303.62,66,light rain
+1380,300.22,81,thunderstorm with light rain
+1381,299.38,85,light intensity shower rain
+1382,299.42,90,light rain
+1383,300.16,85,broken clouds
+1384,300.16,81,broken clouds
+1385,300.11,81,broken clouds
+1386,300.16,85,broken clouds
+1387,299.15,90,broken clouds
+1388,299.1,86,broken clouds
+1389,299.1,86,broken clouds
+1390,299.89,83,broken clouds
+1391,299.15,92,broken clouds
+1392,298.33,83,thunderstorm with light rain
+1393,297,94,light intensity shower rain
+1394,297.06,90,light rain
+1395,298.06,88,light rain
+1396,298.84,83,light rain
+1397,299.38,83,light rain
+1398,299.11,83,light rain
+1399,300.16,81,light rain
+1400,301.26,79,light rain
+1401,302.32,72,broken clouds
+1402,302.32,72,broken clouds
+1403,302.01,74,broken clouds
+1404,301.96,74,broken clouds
+1405,300.9,80,broken clouds
+1406,300.85,81,broken clouds
+1407,299.85,89,light rain
+1408,299.58,91,broken clouds
+1409,299.84,92,broken clouds
+1410,298.84,94,broken clouds
+1411,299.1,92,light rain
+1412,298.84,94,light rain
+1413,299.1,92,broken clouds
+1414,298.88,94,broken clouds
+1415,299.1,92,broken clouds
+1416,298.84,94,broken clouds
+1417,298.64,96,broken clouds
+1418,300.2,86,broken clouds
+1419,302.24,77,broken clouds
+1420,302.68,72,broken clouds
+1421,304.03,64,broken clouds
+1422,304.79,62,broken clouds
+1423,304.97,62,broken clouds
+1424,304.7,62,light rain
+1425,300.69,80,thunderstorm with rain
+1426,299.79,91,thunderstorm with light rain
+1427,299.79,91,light rain
+1428,299.42,89,light rain
+1429,298.98,89,light rain
+1430,298.84,89,light rain
+1431,298.81,89,light rain
+1432,298.61,91,broken clouds
+1433,298.61,91,scattered clouds
+1434,298.07,94,broken clouds
+1435,298.07,94,broken clouds
+1436,298.07,94,broken clouds
+1437,298.38,94,light rain
+1438,298.88,89,light intensity shower rain
+1439,298.07,94,light intensity shower rain
+1440,298.07,94,heavy intensity rain
+1441,298.07,94,moderate rain
+1442,298.07,94,moderate rain
+1443,298.84,91,moderate rain
+1444,300.2,83,broken clouds
+1445,302.24,72,broken clouds
+1446,303.17,69,broken clouds
+1447,304.38,62,broken clouds
+1448,304.47,62,broken clouds
+1449,304.92,62,broken clouds
+1450,303.22,73,light intensity shower rain
+1451,303.62,64,broken clouds
+1452,304.55,59,broken clouds
+1453,302.14,73,broken clouds
+1454,302.27,72,broken clouds
+1455,300.89,81,broken clouds
+1456,300.16,81,broken clouds
+1457,300.15,78,broken clouds
+1458,299.89,80,broken clouds
+1459,299.84,78,broken clouds
+1460,298.84,86,broken clouds
+1461,298.84,89,light rain
+1462,298.83,89,light rain
+1463,298.83,89,light rain
+1464,298.83,89,broken clouds
+1465,298.83,91,broken clouds
+1466,298.83,92,broken clouds
+1467,300.15,86,broken clouds
+1468,302.07,77,broken clouds
+1469,302.2,79,broken clouds
+1470,303.23,72,light intensity shower rain
+1471,302.38,77,scattered clouds
+1472,299.23,91,thunderstorm with heavy rain
+1473,299.23,91,light rain
+1474,298.28,97,thunderstorm with light rain
+1475,299.48,92,moderate rain
+1476,299.48,92,thunderstorm with light rain
+1477,298.38,86,moderate rain
+1478,298.38,83,light rain
+1479,298.32,86,broken clouds
+1480,298.39,85,light rain
+1481,298.39,91,broken clouds
+1482,298.04,88,light rain
+1483,298.06,90,light rain
+1484,298.26,86,light rain
+1485,298.06,88,light rain
+1486,298.09,88,light rain
+1487,298.06,88,broken clouds
+1488,298.06,88,broken clouds
+1489,298.06,92,light rain
+1490,298.06,92,light rain
+1491,298.06,92,light rain
+1492,298.06,92,light rain
+1493,298.06,94,light rain
+1494,298.29,90,light rain
+1495,297.87,89,thunderstorm with rain
+1496,297.87,89,light rain
+1497,297.8,94,moderate rain
+1498,298.05,90,moderate rain
+1499,298.05,90,moderate rain
+1500,299.01,91,light rain
+1501,299.39,89,light rain
+1502,299.89,89,light rain
+1503,299.89,89,light rain
+1504,299.89,85,broken clouds
+1505,298.84,94,broken clouds
+1506,298.84,91,broken clouds
+1507,298.84,91,broken clouds
+1508,298.09,94,scattered clouds
+1509,298.06,94,broken clouds
+1510,298.06,94,broken clouds
+1511,298.09,94,light rain
+1512,298.06,94,light rain
+1513,298.06,94,broken clouds
+1514,298.01,90,broken clouds
+1515,297.01,94,broken clouds
+1516,297.01,94,broken clouds
+1517,297.01,94,broken clouds
+1518,298.06,94,mist
+1519,300.06,81,broken clouds
+1520,300.34,81,broken clouds
+1521,301.48,76,light rain
+1522,303.08,66,broken clouds
+1523,304.2,62,broken clouds
+1524,304.55,59,broken clouds
+1525,305.41,53,broken clouds
+1526,305.49,54,broken clouds
+1527,304.77,55,broken clouds
+1528,303.51,62,broken clouds
+1529,303.02,66,broken clouds
+1530,300.18,79,thunderstorm
+1531,299.11,83,thunderstorm
+1532,299.11,81,scattered clouds
+1533,299.1,81,sky is clear
+1534,299.84,78,sky is clear
+1535,299.15,81,sky is clear
+1536,299.15,81,scattered clouds
+1537,298.84,83,scattered clouds
+1538,298.83,86,broken clouds
+1539,298.26,86,light rain
+1540,298.8,80,light rain
+1541,298.8,81,light rain
+1542,298.83,81,light rain
+1543,300.6,71,broken clouds
+1544,300.72,69,broken clouds
+1545,302.64,66,light rain
+1546,303.51,65,light rain
+1547,304.1,61,light rain
+1548,303.83,59,light rain
+1549,303.72,59,light rain
+1550,304.2,57,light rain
+1551,304,57,light rain
+1552,303.37,60,light rain
+1553,302.38,67,broken clouds
+1554,302.3,67,broken clouds
+1555,301.31,75,broken clouds
+1556,301.03,78,light rain
+1557,300.31,81,light rain
+1558,300.31,81,light rain
+1559,300.04,78,broken clouds
+1560,299.31,81,light rain
+1561,299.31,81,light rain
+1562,299.31,80,light rain
+1563,299.04,81,broken clouds
+1564,299.31,76,broken clouds
+1565,299.04,81,broken clouds
+1566,299.32,81,scattered clouds
+1567,301.31,72,broken clouds
+1568,301.31,72,broken clouds
+1569,303.04,64,broken clouds
+1570,304.04,58,broken clouds
+1571,304.31,57,scattered clouds
+1572,305.04,53,scattered clouds
+1573,305.3,52,scattered clouds
+1574,305.55,52,scattered clouds
+1575,304.03,61,scattered clouds
+1576,302.04,76,thunderstorm with light rain
+1577,297.5,96,thunderstorm with rain
+1578,297.48,96,light rain
+1579,297.78,96,moderate rain
+1580,298.76,93,light rain
+1581,298.76,96,scattered clouds
+1582,299.04,94,broken clouds
+1583,298.78,96,broken clouds
+1584,298.78,93,broken clouds
+1585,298.76,93,broken clouds
+1586,298.76,94,broken clouds
+1587,298.04,94,scattered clouds
+1588,298.06,94,broken clouds
+1589,298.06,90,broken clouds
+1590,299.76,85,broken clouds
+1591,301.04,76,broken clouds
+1592,302.58,71,scattered clouds
+1593,303.31,64,broken clouds
+1594,303.59,60,scattered clouds
+1595,303.32,67,scattered clouds
+1596,303.83,62,broken clouds
+1597,304.15,61,light rain
+1598,303.89,59,broken clouds
+1599,303.57,63,broken clouds
+1600,303.15,64,broken clouds
+1601,302.23,69,scattered clouds
+1602,302,72,scattered clouds
+1603,301.27,75,broken clouds
+1604,300.9,76,broken clouds
+1605,300.16,81,broken clouds
+1606,299.85,83,broken clouds
+1607,300.16,80,broken clouds
+1608,300.16,80,broken clouds
+1609,300.11,76,broken clouds
+1610,299.9,81,broken clouds
+1611,299.89,78,broken clouds
+1612,299.89,74,scattered clouds
+1613,299.15,81,broken clouds
+1614,300.16,81,broken clouds
+1615,302.15,75,broken clouds
+1616,302.68,67,broken clouds
+1617,303.69,61,broken clouds
+1618,303.94,62,broken clouds
+1619,304.89,55,broken clouds
+1620,304.97,55,broken clouds
+1621,304.97,52,broken clouds
+1622,304.89,49,broken clouds
+1623,304.89,49,broken clouds
+1624,304.15,52,broken clouds
+1625,303.29,59,broken clouds
+1626,302.32,67,broken clouds
+1627,302.27,67,broken clouds
+1628,301.53,72,sky is clear
+1629,301.26,73,sky is clear
+1630,301.26,73,sky is clear
+1631,301.21,73,sky is clear
+1632,300.47,76,sky is clear
+1633,300.21,80,scattered clouds
+1634,300.21,76,scattered clouds
+1635,299.46,78,thunderstorm with light rain
+1636,299.58,78,light rain
+1637,298.81,83,light rain
+1638,301.16,69,light rain
+1639,303.01,66,light rain
+1640,303.3,63,broken clouds
+1641,304.15,59,broken clouds
+1642,304.43,52,broken clouds
+1643,304.89,55,broken clouds
+1644,305.81,47,broken clouds
+1645,306.06,47,broken clouds
+1646,306.06,47,broken clouds
+1647,305.9,47,broken clouds
+1648,305.64,48,broken clouds
+1649,303.76,54,broken clouds
+1650,303.17,55,broken clouds
+1651,301.96,70,broken clouds
+1652,301.96,65,broken clouds
+1653,302,64,broken clouds
+1654,302.27,67,broken clouds
+1655,300.89,76,thunderstorm
+1656,300.63,74,scattered clouds
+1657,300.16,76,moderate rain
+1658,299.84,81,broken clouds
+1659,299.84,80,broken clouds
+1660,299.89,83,broken clouds
+1661,299.84,83,broken clouds
+1662,300.78,78,broken clouds
+1663,302.68,71,broken clouds
+1664,304.63,61,broken clouds
+1665,304.23,56,broken clouds
+1666,305.39,50,broken clouds
+1667,305.53,49,broken clouds
+1668,305.83,46,broken clouds
+1669,305.8,45,broken clouds
+1670,305.61,46,broken clouds
+1671,306.05,46,broken clouds
+1672,305.64,47,broken clouds
+1673,303.84,58,broken clouds
+1674,303.61,64,broken clouds
+1675,302.32,71,broken clouds
+1676,302.27,72,light rain
+1677,301.22,87,light rain
+1678,301.21,83,broken clouds
+1679,301.21,81,broken clouds
+1680,301.21,81,thunderstorm
+1681,300.94,83,moderate rain
+1682,300.89,83,light rain
+1683,300.16,83,broken clouds
+1684,299.9,89,light rain
+1685,300.16,86,moderate rain
+1686,297.96,78,light intensity shower rain
+1687,296.45,91,moderate rain
+1688,296.45,94,moderate rain
+1689,297.09,91,moderate rain
+1690,297.28,91,moderate rain
+1691,297.35,91,moderate rain
+1692,298.45,88,light rain
+1693,299.42,80,heavy intensity rain
+1694,299.46,80,moderate rain
+1695,299.89,78,moderate rain
+1696,299.39,80,moderate rain
+1697,298.81,83,moderate rain
+1698,298.27,86,light rain
+1699,298.81,83,light rain
+1700,298.29,86,light rain
+1701,298.84,83,light rain
+1702,298.84,85,broken clouds
+1703,298.15,91,broken clouds
+1704,298.26,86,broken clouds
+1705,298.26,86,light rain
+1706,298.21,86,light rain
+1707,298.06,88,broken clouds
+1708,298.01,88,broken clouds
+1709,298.26,86,broken clouds
+1710,298.8,80,broken clouds
+1711,299.15,81,broken clouds
+1712,300.16,76,broken clouds
+1713,301.34,72,light rain
+1714,302.4,68,broken clouds
+1715,303.07,62,scattered clouds
+1716,303.36,63,broken clouds
+1717,303.36,63,light intensity shower rain
+1718,303.46,61,broken clouds
+1719,302.32,62,broken clouds
+1720,301.22,64,broken clouds
+1721,300.16,67,light rain
+1722,299.9,69,light rain
+1723,299.84,74,sky is clear
+1724,299.1,76,sky is clear
+1725,299.1,76,broken clouds
+1726,299.1,76,sky is clear
+1727,298.84,81,sky is clear
+1728,298.83,81,sky is clear
+1729,298.29,86,sky is clear
+1730,298.29,81,sky is clear
+1731,298.83,78,sky is clear
+1732,298.83,78,sky is clear
+1733,298.29,81,sky is clear
+1734,298.83,83,broken clouds
+1735,299.1,81,broken clouds
+1736,300.16,76,broken clouds
+1737,301.99,70,broken clouds
+1738,302.32,67,broken clouds
+1739,303.07,64,broken clouds
+1740,303.17,64,broken clouds
+1741,304,55,light rain
+1742,303.16,60,light rain
+1743,302.18,68,broken clouds
+1744,301.88,70,broken clouds
+1745,301.17,71,light rain
+1746,300.16,76,broken clouds
+1747,300.16,76,broken clouds
+1748,300.16,76,broken clouds
+1749,300.16,76,broken clouds
+1750,299.89,78,broken clouds
+1751,299.1,81,broken clouds
+1752,299.1,81,light rain
+1753,298.84,83,broken clouds
+1754,298.83,83,broken clouds
+1755,298.83,83,broken clouds
+1756,299.1,81,broken clouds
+1757,299.1,81,broken clouds
+1758,299.84,81,light rain
+1759,300.12,76,light rain
+1760,301.8,72,light rain
+1761,301.34,72,light rain
+1762,301.88,70,light rain
+1763,302.4,68,light rain
+1764,302.4,67,light rain
+1765,302.02,68,light rain
+1766,302.8,64,broken clouds
+1767,301.96,68,light rain
+1768,301.22,71,broken clouds
+1769,300.16,75,scattered clouds
+1770,299.85,78,broken clouds
+1771,299.84,76,broken clouds
+1772,299.84,74,broken clouds
+1773,299.1,80,broken clouds
+1774,299.1,76,broken clouds
+1775,299.1,80,broken clouds
+1776,298.84,81,broken clouds
+1777,298.84,83,broken clouds
+1778,298.83,83,broken clouds
+1779,298.83,83,broken clouds
+1780,298.83,83,broken clouds
+1781,298.83,81,broken clouds
+1782,299.1,80,sky is clear
+1783,301.09,73,sky is clear
+1784,301.96,68,broken clouds
+1785,302.4,64,broken clouds
+1786,303,58,broken clouds
+1787,303.3,55,light rain
+1788,303.17,57,light rain
+1789,303.7,55,scattered clouds
+1790,303.48,55,scattered clouds
+1791,302.4,59,light rain
+1792,302.01,60,scattered clouds
+1793,301.22,64,broken clouds
+1794,300.9,67,broken clouds
+1795,300.16,72,broken clouds
+1796,299.9,76,broken clouds
+1797,299.9,78,broken clouds
+1798,299.84,78,broken clouds
+1799,299.1,81,broken clouds
+1800,299.1,81,broken clouds
+1801,299.1,81,broken clouds
+1802,298.83,83,broken clouds
+1803,298.83,83,broken clouds
+1804,298.83,83,broken clouds
+1805,298.8,81,broken clouds
+1806,299.84,78,broken clouds
+1807,300.95,74,broken clouds
+1808,302.1,68,broken clouds
+1809,303.76,58,broken clouds
+1810,304.15,59,broken clouds
+1811,303.53,63,broken clouds
+1812,304.23,57,broken clouds
+1813,303.22,61,broken clouds
+1814,303.7,59,broken clouds
+1815,303.16,60,broken clouds
+1816,302.32,62,broken clouds
+1817,301.96,64,broken clouds
+1818,300.9,69,broken clouds
+1819,300.9,69,sky is clear
+1820,300.16,76,sky is clear
+1821,299.9,78,sky is clear
+1822,299.15,81,sky is clear
+1823,299.15,81,sky is clear
+1824,298.84,83,sky is clear
+1825,299.1,81,sky is clear
+1826,298.84,83,sky is clear
+1827,299.1,81,sky is clear
+1828,298.84,83,broken clouds
+1829,299.1,81,broken clouds
+1830,299.89,78,broken clouds
+1831,300.9,74,broken clouds
+1832,301.34,76,broken clouds
+1833,302.4,71,light rain
+1834,303.52,63,broken clouds
+1835,304.13,63,broken clouds
+1836,304.08,61,broken clouds
+1837,304.23,57,light rain
+1838,303.3,60,light rain
+1839,303.22,62,broken clouds
+1840,302.01,65,broken clouds
+1841,301.22,67,broken clouds
+1842,300.9,72,broken clouds
+1843,300.16,72,broken clouds
+1844,299.84,76,broken clouds
+1845,299.84,76,broken clouds
+1846,299.84,76,broken clouds
+1847,298.84,83,broken clouds
+1848,298.83,83,broken clouds
+1849,298.83,83,broken clouds
+1850,298.83,83,broken clouds
+1851,298.83,83,broken clouds
+1852,298.29,86,broken clouds
+1853,298.83,83,broken clouds
+1854,299.1,81,broken clouds
+1855,300.42,76,broken clouds
+1856,301.56,72,broken clouds
+1857,303.53,64,broken clouds
+1858,304.23,59,broken clouds
+1859,304.31,59,broken clouds
+1860,304.31,59,light rain
+1861,304.77,57,light intensity shower rain
+1862,303.76,58,broken clouds
+1863,302.46,62,scattered clouds
+1864,302.01,64,light rain
+1865,301.22,66,broken clouds
+1866,300.9,69,broken clouds
+1867,300.9,69,broken clouds
+1868,299.9,78,broken clouds
+1869,299.9,78,broken clouds
+1870,299.89,78,broken clouds
+1871,299.84,78,broken clouds
+1872,299.1,81,broken clouds
+1873,299.1,81,broken clouds
+1874,299.1,81,broken clouds
+1875,298.83,83,broken clouds
+1876,298.84,83,broken clouds
+1877,298.84,89,broken clouds
+1878,299.84,83,broken clouds
+1879,301.26,76,broken clouds
+1880,302.4,72,broken clouds
+1881,303.76,62,light rain
+1882,303.65,63,light intensity shower rain
+1883,303.48,69,light intensity shower rain
+1884,303.92,58,moderate rain
+1885,302.06,76,light intensity shower rain
+1886,300.08,85,heavy intensity shower rain
+1887,299.07,94,light rain
+1888,298.4,94,moderate rain
+1889,298.07,96,light rain
+1890,298.61,87,light rain
+1891,298.06,90,light rain
+1892,298.81,85,broken clouds
+1893,298.84,85,broken clouds
+1894,298.84,89,broken clouds
+1895,298.29,88,broken clouds
+1896,298.07,94,light rain
+1897,298.06,90,light rain
+1898,298.26,92,light rain
+1899,298.29,92,light rain
+1900,298.29,92,broken clouds
+1901,298.29,92,broken clouds
+1902,298.83,89,broken clouds
+1903,300.07,81,broken clouds
+1904,302.08,73,broken clouds
+1905,303,70,light rain
+1906,303.34,68,light rain
+1907,302.04,77,light intensity shower rain
+1908,301.34,89,light intensity shower rain
+1909,299.25,91,light intensity shower rain
+1910,299.94,89,thunderstorm with light rain
+1911,299.94,89,moderate rain
+1912,299.89,85,light rain
+1913,299.9,89,light rain
+1914,299.62,91,light rain
+1915,299.9,89,light rain
+1916,299.84,85,light rain
+1917,299.58,87,moderate rain
+1918,298.84,91,light rain
+1919,298.84,89,moderate rain
+1920,299.1,86,moderate rain
+1921,298.84,89,moderate rain
+1922,298.84,89,moderate rain
+1923,298.84,89,light rain
+1924,298.81,89,light rain
+1925,298.29,88,light rain
+1926,298.64,91,light rain
+1927,298.84,91,broken clouds
+1928,299.1,86,light rain
+1929,299.85,80,broken clouds
+1930,300.29,76,broken clouds
+1931,301.48,72,light rain
+1932,302.32,68,broken clouds
+1933,301.26,67,light rain
+1934,300.83,74,moderate rain
+1935,300.74,74,light rain
+1936,300.17,76,light rain
+1937,299.89,78,light rain
+1938,299.85,78,light rain
+1939,299.1,86,light rain
+1940,299.1,86,scattered clouds
+1941,298.84,89,broken clouds
+1942,298.84,89,broken clouds
+1943,298.84,89,broken clouds
+1944,298.84,83,broken clouds
+1945,298.29,86,broken clouds
+1946,298.26,86,light rain
+1947,298.26,86,broken clouds
+1948,298.26,86,broken clouds
+1949,298.26,86,scattered clouds
+1950,298.26,86,broken clouds
+1951,298.83,85,broken clouds
+1952,299.69,80,broken clouds
+1953,300.67,76,broken clouds
+1954,301.05,76,broken clouds
+1955,302.26,68,light rain
+1956,302.26,68,moderate rain
+1957,302.77,66,moderate rain
+1958,302.32,67,light rain
+1959,302.4,60,light rain
+1960,301.21,67,broken clouds
+1961,300.9,67,broken clouds
+1962,300.16,72,broken clouds
+1963,299.84,74,broken clouds
+1964,299.84,74,broken clouds
+1965,299.84,76,broken clouds
+1966,299.84,78,broken clouds
+1967,299.84,78,broken clouds
+1968,299.1,81,broken clouds
+1969,299.1,81,broken clouds
+1970,298.84,83,broken clouds
+1971,298.84,83,broken clouds
+1972,298.84,83,broken clouds
+1973,299.1,81,broken clouds
+1974,299.1,81,broken clouds
+1975,299.1,81,broken clouds
+1976,300.74,74,sky is clear
+1977,301.88,68,broken clouds
+1978,302.4,67,broken clouds
+1979,303.76,58,scattered clouds
+1980,303.55,61,scattered clouds
+1981,304.92,57,scattered clouds
+1982,303.32,65,light intensity shower rain
+1983,303.53,60,scattered clouds
+1984,303.62,62,light rain
+1985,302.94,62,light rain
+1986,301.22,71,scattered clouds
+1987,301.22,72,scattered clouds
+1988,300.9,74,broken clouds
+1989,299.9,78,broken clouds
+1990,299.9,78,broken clouds
+1991,299.9,78,broken clouds
+1992,299.84,78,broken clouds
+1993,299.84,78,broken clouds
+1994,299.1,81,broken clouds
+1995,299.1,81,broken clouds
+1996,298.84,83,broken clouds
+1997,298.84,83,broken clouds
+1998,298.84,83,broken clouds
+1999,299.9,78,broken clouds
+2000,300.29,76,broken clouds
+2001,301.86,71,broken clouds
+2002,302.54,68,broken clouds
+2003,304.05,59,broken clouds
+2004,304.17,61,broken clouds
+2005,303,66,broken clouds
+2006,302.18,72,broken clouds
+2007,301.64,71,light intensity shower rain
+2008,302.26,72,broken clouds
+2009,302.28,71,broken clouds
+2010,301.96,72,broken clouds
+2011,301.17,72,broken clouds
+2012,300.16,76,sky is clear
+2013,300.11,75,sky is clear
+2014,300.16,76,scattered clouds
+2015,300.16,78,broken clouds
+2016,299.84,78,broken clouds
+2017,299.9,78,broken clouds
+2018,299.1,81,sky is clear
+2019,299.1,81,sky is clear
+2020,298.84,83,scattered clouds
+2021,298.84,83,sky is clear
+2022,299.1,81,sky is clear
+2023,300.16,75,broken clouds
+2024,300.42,76,broken clouds
+2025,302.4,68,broken clouds
+2026,303.76,62,broken clouds
+2027,303.36,64,light rain
+2028,304,60,light rain
+2029,304.47,62,light intensity shower rain
+2030,304.23,64,broken clouds
+2031,304.39,60,broken clouds
+2032,303.51,67,broken clouds
+2033,303.2,64,broken clouds
+2034,302.16,69,broken clouds
+2035,301.27,75,light rain
+2036,301.27,76,moderate rain
+2037,300.95,78,light rain
+2038,300.95,81,light rain
+2039,300.95,78,scattered clouds
+2040,299.58,91,light intensity shower rain
+2041,299.58,89,light rain
+2042,299.15,92,light rain
+2043,298.6,92,heavy intensity shower rain
+2044,298.34,98,heavy intensity shower rain
+2045,298.09,90,light intensity shower rain
+2046,298.09,88,light rain
+2047,298.89,89,light rain
+2048,299.46,86,light rain
+2049,300.99,82,light rain
+2050,300.16,81,light rain
+2051,302.86,72,light rain
+2052,303,68,light rain
+2053,302.51,71,light rain
+2054,302.42,74,light intensity shower rain
+2055,300.78,82,light rain
+2056,301.61,75,light rain
+2057,300.47,78,light intensity shower rain
+2058,299.94,83,light rain
+2059,300.21,81,light rain
+2060,300.11,81,light rain
+2061,298.29,90,heavy intensity shower rain
+2062,298.09,94,light rain
+2063,298.09,94,light rain
+2064,298.09,94,light rain
+2065,298.15,94,light rain
+2066,298.15,93,light rain
+2067,298.29,92,light rain
+2068,298.29,92,light rain
+2069,298.33,92,light rain
+2070,298.26,92,broken clouds
+2071,300.15,83,scattered clouds
+2072,301.1,76,scattered clouds
+2073,302.02,73,scattered clouds
+2074,302.18,71,light intensity shower rain
+2075,303.17,68,broken clouds
+2076,303.17,68,broken clouds
+2077,303.69,61,light rain
+2078,303.76,57,broken clouds
+2079,303.45,64,light rain
+2080,303.19,65,light rain
+2081,302.14,73,moderate rain
+2082,301.08,81,moderate rain
+2083,299.81,85,thunderstorm with heavy rain
+2084,299.81,85,moderate rain
+2085,298.06,96,thunderstorm with light rain
+2086,298.06,96,moderate rain
+2087,298.07,96,moderate rain
+2088,298.01,96,moderate rain
+2089,298.06,90,moderate rain
+2090,298.06,90,shower rain
+2091,297.01,96,thunderstorm with light rain
+2092,297.01,96,light rain
+2093,297.01,96,light rain
+2094,297.01,96,light rain
+2095,297.06,96,light rain
+2096,297.79,92,light rain
+2097,298.06,94,light rain
+2098,298.09,94,light rain
+2099,299.15,86,light rain
+2100,301.08,81,light rain
+2101,301.89,74,light rain
+2102,302.32,71,light rain
+2103,302.4,68,broken clouds
+2104,303.17,65,broken clouds
+2105,303.62,62,broken clouds
+2106,303.06,66,broken clouds
+2107,303.31,59,broken clouds
+2108,303.06,65,broken clouds
+2109,302,70,light rain
+2110,301.09,73,light rain
+2111,300.94,76,light rain
+2112,300.11,76,broken clouds
+2113,299.1,81,scattered clouds
+2114,298.81,83,broken clouds
+2115,298.26,86,broken clouds
+2116,298.06,88,sky is clear
+2117,298.26,86,sky is clear
+2118,298.26,86,sky is clear
+2119,298.26,86,sky is clear
+2120,298.26,86,broken clouds
+2121,298.26,86,broken clouds
+2122,298.84,83,broken clouds
+2123,299.15,81,broken clouds
+2124,300.34,76,broken clouds
+2125,301.43,72,broken clouds
+2126,302.76,67,broken clouds
+2127,304.13,61,broken clouds
+2128,304.23,57,broken clouds
+2129,303.93,57,broken clouds
+2130,304.23,55,broken clouds
+2131,303.4,61,broken clouds
+2132,302.65,65,broken clouds
+2133,301.96,74,broken clouds
+2134,300.9,78,broken clouds
+2135,300.11,81,broken clouds
+2136,300.11,81,broken clouds
+2137,299.1,86,broken clouds
+2138,299.1,86,broken clouds
+2139,298.84,89,broken clouds
+2140,298.84,89,broken clouds
+2141,298.81,89,broken clouds
+2142,298.8,89,broken clouds
+2143,298.29,92,scattered clouds
+2144,298.83,89,broken clouds
+2145,298.26,92,broken clouds
+2146,299.15,86,broken clouds
+2147,300.88,78,broken clouds
+2148,302.4,72,broken clouds
+2149,303.62,67,broken clouds
+2150,304.23,63,broken clouds
+2151,304.85,58,broken clouds
+2152,305.57,57,broken clouds
+2153,305.59,58,broken clouds
+2154,304.43,62,broken clouds
+2155,303.31,72,broken clouds
+2156,301.86,79,broken clouds
+2157,300.96,83,broken clouds
+2158,299.95,85,broken clouds
+2159,299.89,89,broken clouds
+2160,299.89,89,broken clouds
+2161,299.9,89,broken clouds
+2162,299.84,89,broken clouds
+2163,298.89,94,broken clouds
+2164,298.88,94,scattered clouds
+2165,298.88,92,scattered clouds
+2166,298.84,94,light rain
+2167,298.84,94,light rain
+2168,299.1,89,light intensity shower rain
+2169,298.84,92,broken clouds
+2170,299.9,89,light rain
+2171,300.26,84,light rain
+2172,300.26,84,light rain
+2173,301.4,81,light rain
+2174,302.3,75,light rain
+2175,303.76,64,scattered clouds
+2176,303.72,63,light rain
+2177,303.54,64,light rain
+2178,304.59,61,broken clouds
+2179,303.86,61,thunderstorm
