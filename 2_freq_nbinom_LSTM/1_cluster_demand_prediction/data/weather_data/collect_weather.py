@@ -29,8 +29,8 @@ os.chdir('C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model
 
 # ########### API calls #############
 
-#working
-#https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=1.441065&lon=103.798087&dt=1634472000&appid=ce41e2be6cde1700cf8be0d874f3d717
+# working
+# https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=1.441065&lon=103.798087&dt=1634472000&appid=ce41e2be6cde1700cf8be0d874f3d717
 
 
 
@@ -43,6 +43,7 @@ os.chdir('C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model
 # #wind_clstr_48 = np.array([])
 # #wea_clstr_48 = np.array([])
 # wea_desc_clstr_48 = np.array([])
+# cluster_id = np.array([])
 
 # for c in cluster_list:
 #     with open(c+".json",'r') as f:
@@ -54,6 +55,7 @@ os.chdir('C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model
 #             #wind_clstr_48 = np.append(wind_clstr_48, data["list"][i]["wind"]["speed"])
 #             #wea_clstr_48 = np.append(wea_clstr_48, data["list"][i]["weather"][0]["main"])
 #             wea_desc_clstr_48 = np.append(wea_desc_clstr_48, data["list"][i]["weather"][0]["description"])
+#             cluster_id = np.append(cluster_id, c)
 
 
 # plt.plot(hum_clstr_48)
@@ -67,6 +69,7 @@ os.chdir('C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model
 # # df["wind_clstr_48"] = wind_clstr_48
 # # df["wea_clstr_48"] = wea_clstr_48
 # df["wea_desc_clstr_48"] = wea_desc_clstr_48
+# df["cluster_id"] = cluster_id
 # df.to_csv("central_clstr_48_weather.csv")
 
 # ########### SAVE region weather data #############
