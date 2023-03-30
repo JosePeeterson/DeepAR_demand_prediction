@@ -12,7 +12,7 @@ from torch.nn.utils import rnn
 from torchmetrics import Metric as LightningMetric
 
 from pytorch_forecasting.utils import create_mask, unpack_sequence, unsqueeze_like
-import numpy as np
+
 
 class Metric(LightningMetric):
     """
@@ -22,6 +22,10 @@ class Metric(LightningMetric):
 
     Other metrics should inherit from this base class
     """
+
+    full_state_update = False
+    higher_is_better = False
+    is_differentiable = True
 
     def __init__(self, name: str = None, quantiles: List[float] = None, reduction="mean", **kwargs):
         """
@@ -236,6 +240,10 @@ class MultiLoss(LightningMetric):
     """
     Metric that can be used with muliple metrics.
     """
+
+    full_state_update = False
+    higher_is_better = False
+    is_differentiable = True
 
     def __init__(self, metrics: List[LightningMetric], weights: List[float] = None):
         """
@@ -483,6 +491,10 @@ class CompositeMetric(LightningMetric):
 
             composite_metric = SMAPE() + 0.4 * MAE()
     """
+
+    full_state_update = False
+    higher_is_better = False
+    is_differentiable = True
 
     def __init__(self, metrics: List[LightningMetric] = [], weights: List[float] = None):
         """
@@ -949,18 +961,7 @@ class DistributionLoss(MultiHorizonMetric):
             torch.Tensor: tensor with samples  (shape batch_size x n_timesteps x n_samples)
         """
         dist = self.map_x_to_distribution(y_pred)
-
-        mean = y_pred[..., 0]
-        shape = y_pred[..., 1]
-        r = 1.0 / shape
-        p = mean / (mean + r)
-        mode = np.where(r>1, np.floor( (p*(r-1))/(1-p) ),0  )
-
         samples = dist.sample((n_samples,))
-
-        for i in range(samples.shape[0]):
-            samples[i,:,:] = torch.from_numpy(mode[:,:])
-
         if samples.ndim == 3:
             samples = samples.permute(1, 2, 0)
         elif samples.ndim == 2:
@@ -987,7 +988,7 @@ class DistributionLoss(MultiHorizonMetric):
             quantiles = distribution.icdf(torch.tensor(quantiles, device=y_pred.device)[:, None, None]).permute(1, 2, 0)
         except NotImplementedError:  # resort to derive quantiles empirically
             samples = torch.sort(self.sample(y_pred, n_samples), -1).values
-            quantiles = torch.quantile(torch.as_tensor(samples,dtype=torch.float32), torch.as_tensor(quantiles,dtype=torch.float32,device=samples.device), dim=2).permute(1, 2, 0)
+            quantiles = torch.quantile(samples, torch.tensor(quantiles, device=samples.device), dim=2).permute(1, 2, 0)
         return quantiles
 
 

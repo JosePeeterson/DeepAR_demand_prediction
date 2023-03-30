@@ -1,4 +1,4 @@
-name: base
+name: deepar
 channels:
   - plotly
   - conda-forge

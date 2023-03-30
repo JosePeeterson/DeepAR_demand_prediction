@@ -288,8 +288,8 @@ class DeepAR(AutoRegressiveBaseModelWithCovariates):
                 lagged_targets,
                 hidden_state,
             ):
-                x = torch.as_tensor(input_vector[:, [idx]],dtype=torch.float32)
-                x[:, 0, target_pos] = torch.as_tensor(lagged_targets[-1],dtype=torch.float32)
+                x = input_vector[:, [idx]]
+                x[:, 0, target_pos] = lagged_targets[-1]
                 for lag, lag_positions in lagged_target_positions.items():
                     if idx > lag:
                         x[:, 0, lag_positions] = lagged_targets[-lag]
@@ -355,7 +355,7 @@ class DeepAR(AutoRegressiveBaseModelWithCovariates):
         self,
         data: Union[DataLoader, pd.DataFrame, TimeSeriesDataSet],
         mode: Union[str, Tuple[str, str]] = "prediction",
-        return_index: bool = True,
+        return_index: bool = False,
         return_decoder_lengths: bool = False,
         batch_size: int = 64,
         num_workers: int = 0,

@@ -877,7 +877,6 @@ class BaseModel(InitialParameterRepresenterMixIn, LightningModule, TupleOutputMi
                 layers.append(name)
                 ave_grads.append(p.grad.abs().cpu().mean())
                 self.logger.experiment.add_histogram(tag=name, values=p.grad, global_step=self.global_step)
-                self.logger.experiment.add_histogram(tag=name+'_weight', values=p, global_step=self.global_step)
         fig, ax = plt.subplots()
         ax.plot(ave_grads)
         ax.set_xlabel("Layers")
