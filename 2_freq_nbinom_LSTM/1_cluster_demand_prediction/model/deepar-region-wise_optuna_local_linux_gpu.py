@@ -254,6 +254,20 @@ hyperparams_list = [] # FIND minimum RMSE case
 param_comb_cnt=-1
 #for neu,lay,bat,lr,enc_len,pred_len,drop,cov_pair,num_ep in product(*[x for x in hparams_grid.values()]):
 
+
+class MetricsCallback(pl.Callback):
+    """PyTorch Lightning metric callback."""
+
+    def __init__(self):
+        super().__init__()
+        self.metrics = []
+
+    def on_validation_end(self, trainer, pl_module):
+        self.metrics.append(trainer.callback_metrics)
+
+
+
+
 def objective(trial):  
   
   neu = trial.suggest_int(name="neu",low=500,high=700,step=10,log=False)
@@ -264,104 +278,122 @@ def objective(trial):
   pred_len = 1
   drop = trial.suggest_float(name="dropout",low=0,high=0.2,step=0.2,log=False)
 #   cov_pair = trial.suggest_categorical("cov_pair", cov_pairs_list)
+  num_ep = 35
 
-  for num_ep in range(20,35,2):
+  #for num_ep in range(20,35,2):
 
-    num_cols_list = []  
+  num_cols_list = []  
 
-    cat_dict = {"_hour_of_day": NaNLabelEncoder(add_nan=True).fit(train_data._hour_of_day), \
-    "_day_of_week": NaNLabelEncoder(add_nan=True).fit(train_data._day_of_week), "_day_of_month" : NaNLabelEncoder(add_nan=True).fit(train_data._day_of_month), "_day_of_year" : NaNLabelEncoder(add_nan=True).fit(train_data._day_of_year), \
-        "_week_of_year": NaNLabelEncoder(add_nan=True).fit(train_data._week_of_year), "_month_of_year": NaNLabelEncoder(add_nan=True).fit(train_data._month_of_year) ,"_year": NaNLabelEncoder(add_nan=True).fit(train_data._year) }
-    cat_list = ["_hour_of_day","_day_of_week","_day_of_month","_day_of_year","_week_of_year","_month_of_year","_year"]  
+  cat_dict = {"_hour_of_day": NaNLabelEncoder(add_nan=True).fit(train_data._hour_of_day), \
+  "_day_of_week": NaNLabelEncoder(add_nan=True).fit(train_data._day_of_week), "_day_of_month" : NaNLabelEncoder(add_nan=True).fit(train_data._day_of_month), "_day_of_year" : NaNLabelEncoder(add_nan=True).fit(train_data._day_of_year), \
+      "_week_of_year": NaNLabelEncoder(add_nan=True).fit(train_data._week_of_year), "_month_of_year": NaNLabelEncoder(add_nan=True).fit(train_data._month_of_year) ,"_year": NaNLabelEncoder(add_nan=True).fit(train_data._year) }
+  cat_list = ["_hour_of_day","_day_of_week","_day_of_month","_day_of_year","_week_of_year","_month_of_year","_year"]  
 
-    num_cols_list.append('dem_lag_168') 
-    num_cols_list.append('dem_lag_336')
-    num_cols_list.append('inflow')
-    # num_cols_list.append('inf_lag_168')  
-    # num_cols_list.append('inf_lag_336')
+  num_cols_list.append('dem_lag_168') 
+  num_cols_list.append('dem_lag_336')
+  num_cols_list.append('inflow')
+  # num_cols_list.append('inf_lag_168')  
+  # num_cols_list.append('inf_lag_336')
 
-    train_dataset = TimeSeriesDataSet(
-        train_data,
-        time_idx="time_idx",
-        target=Target,
-        categorical_encoders=cat_dict,
-        group_ids=["group"],
-        min_encoder_length=enc_len,
-        max_encoder_length=enc_len,
-        min_prediction_length=pred_len,
-        max_prediction_length=pred_len,
-        time_varying_unknown_reals=[Target],
-        time_varying_known_reals=num_cols_list,
-        time_varying_known_categoricals=cat_list,
-        add_relative_time_idx=False,
-        randomize_length=False,
-        scalers={},
-        target_normalizer=TorchNormalizer(method="identity",center=False,transformation=None )
+  train_dataset = TimeSeriesDataSet(
+      train_data,
+      time_idx="time_idx",
+      target=Target,
+      categorical_encoders=cat_dict,
+      group_ids=["group"],
+      min_encoder_length=enc_len,
+      max_encoder_length=enc_len,
+      min_prediction_length=pred_len,
+      max_prediction_length=pred_len,
+      time_varying_unknown_reals=[Target],
+      time_varying_known_reals=num_cols_list,
+      time_varying_known_categoricals=cat_list,
+      add_relative_time_idx=False,
+      randomize_length=False,
+      scalers={},
+      target_normalizer=TorchNormalizer(method="identity",center=False,transformation=None )
 
-    )
+  )
 
-    val_dataset = TimeSeriesDataSet.from_dataset(train_dataset,val_data, stop_randomization=True, predict=False)
-    test_dataset = TimeSeriesDataSet.from_dataset(train_dataset,test_data, stop_randomization=True)
+  val_dataset = TimeSeriesDataSet.from_dataset(train_dataset,val_data, stop_randomization=True, predict=False)
+  test_dataset = TimeSeriesDataSet.from_dataset(train_dataset,test_data, stop_randomization=True)
 
-    train_dataloader = train_dataset.to_dataloader(train=True, batch_size=bat)
-    val_dataloader = val_dataset.to_dataloader(train=False, batch_size=bat)
-    test_dataloader = test_dataset.to_dataloader(train=False, batch_size=bat)
-    ######### Load DATA #############
-
-
-    """
-    Machine Learning predictions START
-    1) DeepAR 
-
-    """
-    trainer = pl.Trainer(
-        max_epochs=num_ep,
-        gpus=-1, #-1
-        auto_lr_find=False,
-        gradient_clip_val=0.1,
-        limit_train_batches=1.0,
-        limit_val_batches=1.0,
-        #fast_dev_run=fdv_steps,
-        logger=True,
-        #log_every_n_steps=10,
-        # profiler=True,
-        callbacks=[lr_logger]#, early_stop_callback],
-        #enable_checkpointing=True,
-        #default_root_dir="C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model\2_freq_nbinom_LSTM\1_cluster_demand_prediction\logs"
-    )
+  train_dataloader = train_dataset.to_dataloader(train=True, batch_size=bat)
+  val_dataloader = val_dataset.to_dataloader(train=False, batch_size=bat)
+  test_dataloader = test_dataset.to_dataloader(train=False, batch_size=bat)
+  ######### Load DATA #############
 
 
-    #print(f"training routing:\n \n {trainer}")
-    deepar = DeepAR.from_dataset(
-        train_dataset,
-        learning_rate=lr,
-        hidden_size=neu,
-        rnn_layers=lay,
-        dropout=drop,
-        loss=Loss,
-        log_interval=20,
-        log_val_interval=6,
-        log_gradient_flow=False,
-        # reduce_on_plateau_patience=3,
-    )
+  """
+  Machine Learning predictions START
+  1) DeepAR 
 
-    #print(f"Number of parameters in network: {deepar.size()/1e3:.1f}k")
-    # print(f"Model :\n \n {deepar}")
-    torch.set_num_threads(10)
-    trainer.fit(
-        deepar,
-        train_dataloaders=train_dataloader,
-        val_dataloaders=val_dataloader,
-    )
+  """
 
-    val_rmse = trainer.callback_metrics['val_RMSE'].item()
-    trial.report(val_rmse, num_ep)
+  metrics_callback = MetricsCallback()
 
-    # Handle pruning based on the intermediate value.
-    if trial.should_prune():
-        raise optuna.exceptions.TrialPruned()
+  trainer = pl.Trainer(
+      max_epochs=num_ep,
+      gpus=-1, #-1
+      auto_lr_find=False,
+      gradient_clip_val=0.1,
+      limit_train_batches=1.0,
+      limit_val_batches=1.0,
+      #fast_dev_run=fdv_steps,
+      logger=True,
+      #log_every_n_steps=3815,
+      val_check_interval=1.0,
+      # profiler=True,
+      callbacks=[lr_logger,metrics_callback]#, early_stop_callback],
+      #enable_checkpointing=True,
+      #default_root_dir="C:\Work\WORK_PACKAGE\Demand_forecasting\github\DeepAR-pytorch\My_model\2_freq_nbinom_LSTM\1_cluster_demand_prediction\logs"
+  )
 
-  return val_rmse
+  # epoch=-1
+  # val_rmse=10
+  # def validation_callback(val_rmse,epoch):
+  #   val_rmse = trainer.callback_metrics['val_RMSE'].item()
+  #   epoch = trainer.callback_metrics['epoch'].item()
+  #   return val_rmse,epoch
+
+  #print(f"training routing:\n \n {trainer}")
+  deepar = DeepAR.from_dataset(
+      train_dataset,
+      learning_rate=lr,
+      hidden_size=neu,
+      rnn_layers=lay,
+      dropout=drop,
+      loss=Loss,
+      log_interval=20,
+      log_val_interval=6,
+      log_gradient_flow=False,
+      # reduce_on_plateau_patience=3,
+  )
+
+  #print(f"Number of parameters in network: {deepar.size()/1e3:.1f}k")
+  # print(f"Model :\n \n {deepar}")
+  torch.set_num_threads(10)
+  trainer.fit(
+      deepar,
+      train_dataloaders=train_dataloader,
+      val_dataloaders=val_dataloader,
+  )
+
+  # get validation RMSE from the last epoch
+  #val_rmse = trainer.callback_metrics["val_RMSE"]
+
+  metrics_list = [ metrics["val_RMSE"].item()  for metrics in  metrics_callback.metrics[1:]]
+  min_val_epoch = np.argmin(metrics_list)
+  min_val_rmse = np.min(metrics_list)
+
+
+  trial.report(min_val_rmse, min_val_epoch)
+
+  # Handle pruning based on the intermediate value.
+  if trial.should_prune():
+      raise optuna.exceptions.TrialPruned()
+
+  return min_val_rmse
 
 
 
@@ -374,7 +406,7 @@ def objective(trial):
 if __name__ == "__main__":
 
   study = optuna.create_study(direction="minimize")
-  study.optimize(objective, timeout=6000)
+  study.optimize(objective, timeout=6000, n_trials=100)
 
   pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
   complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
@@ -392,6 +424,8 @@ if __name__ == "__main__":
   print("  Params: ")
   for key, value in trial.params.items():
       print("    {}: {}".format(key, value))
+
+  print("Best hyperparameters:", study.best_params)
 
   fig = optuna.visualization.plot_parallel_coordinate(study)
   fig.show()
