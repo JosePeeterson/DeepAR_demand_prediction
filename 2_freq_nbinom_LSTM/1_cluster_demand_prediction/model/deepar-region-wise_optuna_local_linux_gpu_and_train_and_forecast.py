@@ -58,7 +58,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import optuna
 from optuna.trial import TrialState
 import plotly
-
+from deepar_RegionWise_LinuxGpu_prediction import train_and_forecast
 
 """
 Set Random seed
@@ -79,7 +79,7 @@ os.chdir("c:/Work/WORK_PACKAGE/Demand_forecasting/github/DeepAR-pytorch/My_model
 os.chdir("/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/2_freq_nbinom_LSTM/1_cluster_demand_prediction/data/demand_data/New_BlueSG_clusters/")
 
 
-
+region ="tampines"
 
 cov_lag_len= 0 #we can use forecasted values, even for inflow
 
@@ -92,19 +92,19 @@ Import pre-processed Data
 
 response and target are the same thing
 """
-tampines_all_clstr_train_dem_data = pd.read_csv('tampines_all_clstr_train_dem_data.csv')
-tampines_all_clstr_val_dem_data = pd.read_csv('tampines_all_clstr_val_dem_data.csv')
-tampines_all_clstr_test_dem_data = pd.read_csv('tampines_all_clstr_test_dem_data.csv')
+all_clstr_train_dem_data = pd.read_csv(region+'_all_clstr_train_dem_data.csv')
+all_clstr_val_dem_data = pd.read_csv(region+'_all_clstr_val_dem_data.csv')
+all_clstr_test_dem_data = pd.read_csv(region+'_all_clstr_test_dem_data.csv')
 
-tampines_all_clstr_train_dem_data = tampines_all_clstr_train_dem_data.drop(['Unnamed: 0'],axis=1)
-tampines_all_clstr_val_dem_data = tampines_all_clstr_val_dem_data.drop(['Unnamed: 0'],axis=1)
-tampines_all_clstr_test_dem_data = tampines_all_clstr_test_dem_data.drop(['Unnamed: 0'],axis=1)
+all_clstr_train_dem_data = all_clstr_train_dem_data.drop(['Unnamed: 0'],axis=1)
+all_clstr_val_dem_data = all_clstr_val_dem_data.drop(['Unnamed: 0'],axis=1)
+all_clstr_test_dem_data = all_clstr_test_dem_data.drop(['Unnamed: 0'],axis=1)
 
 
 
-train_data = tampines_all_clstr_train_dem_data
-val_data = tampines_all_clstr_val_dem_data
-test_data = tampines_all_clstr_test_dem_data
+train_data = all_clstr_train_dem_data
+val_data = all_clstr_val_dem_data
+test_data = all_clstr_test_dem_data
 
 
 cov_lag_len = 1
@@ -241,19 +241,7 @@ uncomment fast_dev_run = fdv_steps
 #early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-4, patience=p, verbose=False, mode="min")
 lr_logger = LearningRateMonitor()
 
-RMSE_list = [] # FIND minimum RMSE case
-hyperparams_list = [] # FIND minimum RMSE case
-
-# best_val_comb_idx=[17,21,51,52,53,54,61,62,63,82,83,84,109,110,111,143,144,145,195,218,219,220,232,233,234,236,237,238,280,338,339,340,344,345,346,386]
-# best_val_train_epochs = [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
-
-# best_val_comb_idx=[234]
-# best_val_train_epochs = [50]
-
-
-param_comb_cnt=-1
-#for neu,lay,bat,lr,enc_len,pred_len,drop,cov_pair,num_ep in product(*[x for x in hparams_grid.values()]):
-
+max_epochs = 35
 
 class MetricsCallback(pl.Callback):
     """PyTorch Lightning metric callback."""
@@ -266,9 +254,7 @@ class MetricsCallback(pl.Callback):
         self.metrics.append(trainer.callback_metrics)
 
 
-
-
-def objective(trial):  
+def objective(trial, max_epochs):  
   
   neu = trial.suggest_int(name="neu",low=500,high=700,step=10,log=False)
   lay = trial.suggest_int(name="lay",low=1,high=3,step=1,log=False)
@@ -277,7 +263,7 @@ def objective(trial):
   enc_len = trial.suggest_int(name="enc_len",low=10,high=24,step=2,log=False)
   pred_len = 1
   drop = trial.suggest_float(name="dropout",low=0,high=0.2,step=0.2,log=False)
-  num_ep = 35
+  num_ep = max_epochs
 
   num_cols_list = []  
 
@@ -402,10 +388,8 @@ if __name__ == "__main__":
   print("  Value: ", trial.value)
 
   print("  Params: ")
-  for key, value in trial.params.items():
+  for key, value in trial.params.items(): ## this is same as study.best_params
       print("    {}: {}".format(key, value))
-
-  #print("Best hyperparameters:", study.best_params)
 
   fig = optuna.visualization.plot_parallel_coordinate(study)
   fig.show()
@@ -418,6 +402,19 @@ if __name__ == "__main__":
 
   fig = optuna.visualization.plot_param_importances(study)
   fig.show()
+
+
+  #print("Best hyperparameters:", study.best_params)
+
+  neurons = study.best_params["neu"]
+  layers = study.best_params["lay"]
+  batch_size = study.best_params["bat"]
+  learning_rate = study.best_params["lr"]
+  dropout = study.best_params["dropout"]
+  encoder_length = study.best_params["enc_len"]
+
+  train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_length,max_epochs,region)
+
 
 
 ########## optuna results #####################
