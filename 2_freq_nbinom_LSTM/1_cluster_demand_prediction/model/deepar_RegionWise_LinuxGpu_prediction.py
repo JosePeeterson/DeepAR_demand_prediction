@@ -155,7 +155,7 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
                     #"Num_epochs":[16,18,20,22,24,26,28]}
     ###### Create hyperparameters grid ###### 
 
-    p = 3 # patience no. of epochs
+    p = 6 # patience no. of epochs
     Loss=NegativeBinomialDistributionLoss()
     ######### Network Architecture definition ###################
     
@@ -190,7 +190,7 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
     uncomment fast_dev_run = fdv_steps
 
     """
-    early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-6, patience=p, verbose=False, mode="min")
+    early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-8, patience=p, verbose=False, mode="min")
     lr_logger = LearningRateMonitor()
 
     RMSE_list = [] # FIND minimum RMSE case
@@ -323,7 +323,7 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
         all_clstrs_deepar_pred = {}
         actual1_full = np.array([])
         pred_full = np.array([])  
-        RMSE_list = np.array([])
+        RMSE_list_DAR_pred = np.array([])
 
         old_pred_idx = test_output[1]['time_idx'][0]
 
@@ -333,26 +333,28 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
             print(pred_idx - old_pred_idx)
             if pred_idx - old_pred_idx < -1: # moved into new group (error: previously sign was > 1)
                 print('group ',group)
-                # plt.figure(figsize=(25,5))
-                # plt.plot(actual1_full.flatten(),'^-')
-                # plt.plot(pred_full.flatten(),'*-')
-                # plt.show()
+                plt.figure(figsize=(25,5))
+                plt.plot(actual1_full.flatten(),'^-')
+                plt.plot(pred_full.flatten(),'*-')
+                plt.show()
+
+                plt.title('scatter plot')
+                plt.xlabel('actual')
+                plt.ylabel('prediction')            
+                plt.scatter(actual1_full.flatten(),pred_full.flatten() )
+                plt.show()
+
+                uniq = np.unique(actual1_full.flatten())
+                cm = confusion_matrix(actual1_full.flatten(), pred_full.flatten())
+                cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
+                cm_display.plot()
+                plt.show()
+
                 RMSE = np.sqrt(mean_squared_error(actual1_full.flatten(),pred_full.flatten() ))
                 print('RMSE : ', RMSE)
+                RMSE_list_DAR_pred = np.append(RMSE_list_DAR_pred,RMSE)
                 all_clstrs_deepar_pred[str(group)+'_actual'] = list(actual1_full.flatten()) 
                 all_clstrs_deepar_pred[str(group)+'_deepar_pred'] = list(pred_full.flatten())
-
-                # plt.title('scatter plot')
-                # plt.xlabel('actual')
-                # plt.ylabel('prediction')            
-                # plt.scatter(actual1_full.flatten(),pred_full.flatten() )
-                # plt.show()
-
-                # uniq = np.unique(actual1_full.flatten())
-                # cm = confusion_matrix(actual1_full.flatten(), pred_full.flatten())
-                # cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
-                # cm_display.plot()
-                # plt.show()
 
                 actual1_full = np.array([])
                 pred_full = np.array([])
@@ -367,24 +369,26 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
             old_pred_idx = pred_idx
             i=i+pred_len
 
-        # plt.figure(figsize=(25,5))
-        # plt.plot(actual1_full.flatten(),'^-')
-        # plt.plot(pred_full.flatten(),'*-')
-        # plt.show()
-        # plt.title('scatter plot')
-        # plt.xlabel('actual')
-        # plt.ylabel('prediction')       
-        # plt.scatter(actual1_full.flatten(),pred_full.flatten() )
-        # plt.show()
+        plt.figure(figsize=(25,5))
+        plt.plot(actual1_full.flatten(),'^-')
+        plt.plot(pred_full.flatten(),'*-')
+        plt.show()
 
-        # uniq = np.unique(actual1_full.flatten())
-        # cm = confusion_matrix(actual1_full.flatten(), pred_full.flatten())
-        # cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
-        # cm_display.plot()
-        # plt.show()
+        plt.title('scatter plot')
+        plt.xlabel('actual')
+        plt.ylabel('prediction')       
+        plt.scatter(actual1_full.flatten(),pred_full.flatten() )
+        plt.show()
+
+        uniq = np.unique(actual1_full.flatten())
+        cm = confusion_matrix(actual1_full.flatten(), pred_full.flatten())
+        cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
+        cm_display.plot()
+        plt.show()
 
         RMSE = np.sqrt(mean_squared_error(actual1_full.flatten(),pred_full.flatten() ))
         print('RMSE : ', RMSE)
+        RMSE_list_DAR_pred = np.append(RMSE_list_DAR_pred,RMSE)
 
         all_clstrs_deepar_pred[str(group)+'_actual_DAR'] = list(actual1_full.flatten()) 
         all_clstrs_deepar_pred[str(group)+'_deepar_pred'] = list(pred_full.flatten())
@@ -461,11 +465,11 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
     """
     Historic average prediction.
     """
-    all_clstrs_hist_avg = {}
+    all_clstrs_hist_avg_pred = {}
     len1 = test_output[1]['time_idx'].shape[0]
     actual1_full = np.array([])
     hist_avg_full = np.array([])
-    RMSE_list = np.array([])
+    RMSE_list_HA_pred = np.array([])
 
     old_pred_idx = test_output[1]['time_idx'][0]
 
@@ -474,27 +478,28 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
         pred_idx = test_output[1]['time_idx'][i]
         if pred_idx - old_pred_idx < -1: # moved into new group (error: previously sign was > 1)
             print('group ',group)
-            # plt.figure(figsize=(25,5))
-            # plt.plot(actual1_full.flatten(),'^-')
-            # plt.plot(hist_avg_full.flatten(),'*-')
-            # plt.show()
+            plt.figure(figsize=(25,5))
+            plt.plot(actual1_full.flatten(),'^-')
+            plt.plot(hist_avg_full.flatten(),'*-')
+            plt.show()
+
+            plt.title('scatter plot')
+            plt.xlabel('actual')
+            plt.ylabel('hist_avg')
+            plt.scatter(actual1_full.flatten(),hist_avg_full.flatten() )
+            plt.show()
+
+            uniq = np.unique(actual1_full.flatten())
+            cm = confusion_matrix(actual1_full.flatten(), hist_avg_full.flatten())
+            cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
+            cm_display.plot()
+            plt.show()
+        
             RMSE = np.sqrt(mean_squared_error(actual1_full.flatten(),hist_avg_full.flatten() ))
             print('RMSE : ', RMSE)
-            RMSE_list = np.append(RMSE_list,RMSE)
-            all_clstrs_hist_avg[str(group)+'_actual_HA'] = list(actual1_full.flatten())
-            all_clstrs_hist_avg[str(group)+'_hist_avg_pred'] = list(hist_avg_full.flatten())
-
-            # plt.title('scatter plot')
-            # plt.xlabel('actual')
-            # plt.ylabel('hist_avg')
-            # plt.scatter(actual1_full.flatten(),hist_avg_full.flatten() )
-            # plt.show()
-
-            # uniq = np.unique(actual1_full.flatten())
-            # cm = confusion_matrix(actual1_full.flatten(), hist_avg_full.flatten())
-            # cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
-            # cm_display.plot()
-            # plt.show()
+            RMSE_list_HA_pred = np.append(RMSE_list_HA_pred,RMSE)
+            all_clstrs_hist_avg_pred[str(group)+'_actual_HA'] = list(actual1_full.flatten())
+            all_clstrs_hist_avg_pred[str(group)+'_hist_avg_pred'] = list(hist_avg_full.flatten())
 
             actual1_full = np.array([])
             hist_avg_full = np.array([])
@@ -529,30 +534,32 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
         i=i+pred_len
 
     print('group ',group)
-    # plt.figure(figsize=(25,5))
-    # plt.plot(actual1_full.flatten(),'^-')
-    # plt.plot(hist_avg_full.flatten(),'*-')
-    # plt.show()
+    plt.figure(figsize=(25,5))
+    plt.plot(actual1_full.flatten(),'^-')
+    plt.plot(hist_avg_full.flatten(),'*-')
+    plt.show()
 
-    # uniq = np.unique(actual1_full.flatten())
-    # cm = confusion_matrix(actual1_full.flatten(), hist_avg_full.flatten())
-    # cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
-    # cm_display.plot()
-    # plt.show()
+    uniq = np.unique(actual1_full.flatten())
+    cm = confusion_matrix(actual1_full.flatten(), hist_avg_full.flatten())
+    cm_display = ConfusionMatrixDisplay(confusion_matrix = cm, display_labels = range(len(uniq)))
+    cm_display.plot()
+    plt.show()
+
+    plt.title('scatter plot')
+    plt.xlabel('actual')
+    plt.ylabel('hist_avg')
+    plt.scatter(actual1_full.flatten(),hist_avg_full.flatten() )
+    plt.show()
 
     RMSE = np.sqrt(mean_squared_error(actual1_full.flatten(),hist_avg_full.flatten() ))
     print(' RMSE : ', RMSE)
-    RMSE_list = np.append(RMSE_list,RMSE)
+    RMSE_list_HA_pred = np.append(RMSE_list_HA_pred,RMSE)
     print('\n Average RMSE = ',np.mean(RMSE_list))
 
-    all_clstrs_hist_avg[str(group)+'_actual_HA'] = list(actual1_full.flatten())
-    all_clstrs_hist_avg[str(group)+'_hist_avg_pred'] = list(hist_avg_full.flatten())
+    all_clstrs_hist_avg_pred[str(group)+'_actual_HA'] = list(actual1_full.flatten())
+    all_clstrs_hist_avg_pred[str(group)+'_hist_avg_pred'] = list(hist_avg_full.flatten())
 
-    # plt.title('scatter plot')
-    # plt.xlabel('actual')
-    # plt.ylabel('hist_avg')
-    # plt.scatter(actual1_full.flatten(),hist_avg_full.flatten() )
-    # plt.show()
+
 
 
     ############### Saving Results and optimal hyperparameters ########################
@@ -561,7 +568,10 @@ def train_and_forecast(neurons,layers,batch_size,learning_rate,dropout,encoder_l
     
     """
 
-    results_dict = {"grp_clstr_map":grp_clstr_map,"all_clstrs_deepar_pred":all_clstrs_deepar_pred, "all_clstrs_hist_avg":all_clstrs_hist_avg}
+    results_dict = {"grp_clstr_map":grp_clstr_map,"all_clstrs_deepar_pred":all_clstrs_deepar_pred, "all_clstrs_hist_avg":all_clstrs_hist_avg_pred}
+    results_dict["best_hyperparams"] = {"neu":neurons,"lay":layers,"bat":batch_size,"lr":learning_rate,"drop":dropout,"enc_len":encoder_length}
+    results_dict["RMSE_DAR"] = RMSE_list_DAR_pred
+    results_dict["HA_RMSE"] = RMSE_list_HA_pred
 
     os.chdir("/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/2_freq_nbinom_LSTM/1_cluster_demand_prediction/data/results_data")
 

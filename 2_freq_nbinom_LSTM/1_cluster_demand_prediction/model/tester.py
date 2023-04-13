@@ -9,7 +9,7 @@ batch_size = 8
 learning_rate = 0.00006
 dropout = 0.2
 encoder_length = 24
-max_epoch = 1
+max_epoch = 35
 region = "tampines"
 
 
