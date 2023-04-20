@@ -12,26 +12,30 @@ import warnings
 #warnings.filterwarnings("ignore")
 from sklearn.metrics import confusion_matrix
 #from sklearn.metrics import plot_confusion_matrix
-from sklearn.metrics import ConfusionMatrixDisplay
+from sklearn.metrics import classification_report
 import pygraphviz
 #warnings.filterwarnings(action='ignore', category=UserWarning)
 from xgboost import plot_tree
 from sklearn.utils import class_weight
 import optuna
 from optuna.trial import TrialState
+from xgboost import plot_importance
 
 
 
 
 
+
+##################################################################################################################
+##################################################################################################################
 class train_validate_n_test(object):
 
     def __init__(self) -> None:
-        os.chdir('/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/2_freq_nbinom_LSTM/1_cluster_demand_prediction/data/xgboost_data')    
+        os.chdir('/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/station_level_prediction/xgboost_forecast/data/demand_data')  
         dataset_filename = "xgboost_feat_train_ds_all_stns.csv"
         full_set = pd.read_csv(dataset_filename,parse_dates=['dt_ts'])
         full_set = full_set.drop(['Unnamed: 0'],axis=1)
-        os.chdir('/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/2_freq_nbinom_LSTM/1_cluster_demand_prediction/model/Xgboost_station_level_prediction')
+        os.chdir('/home/optimusprime/Desktop/peeterson/github/DeepAR_demand_prediction/station_level_prediction/xgboost_forecast/model')
 
         self.train_stop_time_fold_1 = '2021/11/30 00:00'
         self.val_stop_time_fold_1 = '2021/12/05 00:00'
@@ -204,6 +208,8 @@ class train_validate_n_test(object):
         # plt.xlabel('Time')     
         # plt.show()
 
+        print('\nPRECISION, RECALL & F1 scores\n',classification_report(label_test,preds))
+
         #"use confusion matrix, ROC, F1 scores to evaluate"
         cm = confusion_matrix(label_test,preds)
         max_classes = max(len(np.unique(label_test)),len(np.unique(preds)))
@@ -250,109 +256,39 @@ class train_validate_n_test(object):
         plot_tree(self.model3)
 
         return
+##################################################################################################################
+##################################################################################################################
 
 
 
 
 
-def objective(trial):
- 
-    #os.chdir("c:\Work\WORK_PACKAGE\Demand_forecasting\BLUESG_Demand_data\Data-preprocessing_data_generation")
-    t_v_t = train_validate_n_test()
+##################################################################################################################
+##################################################################################################################
+best_tweedie_variance_power = 1.6
+best_params = {"max_depth": 4,
+        "eta": 0.01,
+        "subsample" : 0.7,
+        "colsample_bytree": 1.0,
+        'eval_metric':'tweedie-nloglik@'+str(best_tweedie_variance_power), ## try using AUC as well.. 
+        'tweedie_variance_power': best_tweedie_variance_power,
+        'gamma': 5,
+        'reg_alpha': 5, 
+        'reg_lambda': 5,
+        'min_child_weight': 2,
+        "objective": 'reg:tweedie',
+        }
+early_stopping_rounds = 30
+eval_metric = 'tweedie-nloglik@'+str(best_tweedie_variance_power)
+num_round= 1000
 
-    tweedie_variance_power = round(trial.suggest_float(name='tweedie_variance_power',low=1.1,high=1.9,step=0.1,log=False),1)
-
-    ######  SET Hyperparameter's range for tuning ######
-    early_stopping_rounds = 30
-    eval_metric = 'tweedie-nloglik@'+str(tweedie_variance_power)
-    num_round= 1000
-    # Hyperparameters and algorithm parameters are described here
-    params = {"max_depth": trial.suggest_int('max_depth', 3, 10),
-            "eta": trial.suggest_float(name='learning_rate', low=0.0001, high=0.1,log=True),
-            "subsample" : round(trial.suggest_float(name='subsample', low=0.1, high=1.0,step=0.1),1),
-            "colsample_bytree": round(trial.suggest_float(name='colsample_bytree', low=0.1, high=1.0,step=0.1),1),
-            'eval_metric':eval_metric, ## try using AUC as well.. 
-            'tweedie_variance_power': tweedie_variance_power,
-            'gamma': trial.suggest_int('gamma', 0, 5),
-            'reg_alpha': trial.suggest_int('reg_alpha', 0, 5), 
-            'reg_lambda': trial.suggest_int('reg_lambda', 0, 5),
-            'min_child_weight': trial.suggest_int('min_child_weight', 1, 10),
-            "objective": 'reg:tweedie',
-            #'gpu_id': 1,
-            "tree_method": 'gpu_hist',
-            }
-    ######  SET Hyperparameter's range for tuning ######
-
-    val_avg_error = t_v_t.xgb_train_validate(params,num_round, early_stopping_rounds,tweedie_variance_power)
-    return val_avg_error
+t_v_t = train_validate_n_test()
+best_model = t_v_t.make_predictions(best_params,num_round, early_stopping_rounds)
+t_v_t.evaluate_predictions(best_model)
 
 
 
-
-if __name__ == "__main__":
-    study = optuna.create_study(direction="minimize")
-    study.optimize(objective, timeout=12000, n_trials=500)
-
-    pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
-    complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
-
-    print("Study statistics: ")
-    print("  Number of finished trials: ", len(study.trials))
-    print("  Number of pruned trials: ", len(pruned_trials))
-    print("  Number of complete trials: ", len(complete_trials))
-
-    print("Best trial:")
-    trial = study.best_trial
-
-    print("  Value: ", trial.value)
-
-    print("  Params: ")
-    for key, value in trial.params.items():
-        print("    {}: {}".format(key, value))
-
-    #print("Best hyperparameters:", study.best_params)
-
-    fig = optuna.visualization.plot_parallel_coordinate(study)
-    fig.show()
-
-    fig = optuna.visualization.plot_optimization_history(study)
-    fig.show()
-
-    fig = optuna.visualization.plot_slice(study)
-    fig.show()
-
-    fig = optuna.visualization.plot_param_importances(study)
-    fig.show()
-
-    best_tweedie_variance_power = study.best_params["tweedie_variance_power"]
-    best_params = {"max_depth": study.best_params["max_depth"],
-            "eta": study.best_params["eta"],
-            "subsample" : study.best_params["subsample"],
-            "colsample_bytree": study.best_params["colsample_bytree"],
-            'eval_metric':'tweedie-nloglik@'+str(best_tweedie_variance_power), ## try using AUC as well.. 
-            'tweedie_variance_power': best_tweedie_variance_power,
-            'gamma': study.best_params["gamma"],
-            'reg_alpha': study.best_params["reg_alpha"], 
-            'reg_lambda': study.best_params["reg_lambda"],
-            'min_child_weight': study.best_params["min_child_weight"],
-            "objective": 'reg:tweedie',
-            }
-    early_stopping_rounds = 30
-    eval_metric = 'tweedie-nloglik@'+str(best_tweedie_variance_power)
-    num_round= 1000
-
-    t_v_t = train_validate_n_test()
-    best_model = t_v_t.make_predictions(best_params,num_round, early_stopping_rounds)
-    t_v_t.evaluate_predictions(best_model)
-
-    # t_v_t.display_tweedie_plot() # compare the graphs from target histogram and this function to choose tweedie_variance_power 
-    # X_test,label_test, preds = t_v_t.evaluate_predictions()
-    # t_v_t.visualize_tree()
-    # # print('\n',"tweedie_variance_power ",tweedie_variance_power,'\n')
-
-
-
-
-
-
-
+plot_importance(best_model)
+plt.show()
+##################################################################################################################
+##################################################################################################################
