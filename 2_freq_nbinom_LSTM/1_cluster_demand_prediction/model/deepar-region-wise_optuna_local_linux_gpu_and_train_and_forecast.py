@@ -107,7 +107,7 @@ val_data = all_clstr_val_dem_data
 test_data = all_clstr_test_dem_data
 
 
-cov_lag_len = 1
+cov_lag_len = 0
 
 #################### add date information ts ####################
 #2021 oct 17 20:00:00
@@ -241,7 +241,7 @@ uncomment fast_dev_run = fdv_steps
 #early_stop_callback = EarlyStopping(monitor="val_loss", min_delta=1e-4, patience=p, verbose=False, mode="min")
 lr_logger = LearningRateMonitor()
 
-max_epochs = 35
+max_epochs= 35
 
 class MetricsCallback(pl.Callback):
     """PyTorch Lightning metric callback."""
@@ -254,7 +254,7 @@ class MetricsCallback(pl.Callback):
         self.metrics.append(trainer.callback_metrics)
 
 
-def objective(trial, max_epochs):  
+def objective(trial,):  
   
   neu = trial.suggest_int(name="neu",low=500,high=700,step=10,log=False)
   lay = trial.suggest_int(name="lay",low=1,high=3,step=1,log=False)
@@ -263,6 +263,7 @@ def objective(trial, max_epochs):
   enc_len = trial.suggest_int(name="enc_len",low=10,high=24,step=2,log=False)
   pred_len = 1
   drop = trial.suggest_float(name="dropout",low=0,high=0.2,step=0.2,log=False)
+
   num_ep = max_epochs
 
   num_cols_list = []  
@@ -372,7 +373,7 @@ def objective(trial, max_epochs):
 if __name__ == "__main__":
 
   study = optuna.create_study(direction="minimize")
-  study.optimize(objective, timeout=6000, n_trials=100)
+  study.optimize(objective, timeout=12000, n_trials=500)
 
   pruned_trials = study.get_trials(deepcopy=False, states=[TrialState.PRUNED])
   complete_trials = study.get_trials(deepcopy=False, states=[TrialState.COMPLETE])
