@@ -163,6 +163,14 @@ class DeepAR(AutoRegressiveBaseModelWithCovariates):
                 [nn.Linear(self.hparams.hidden_size, len(args)) for args in self.loss.distribution_arguments]
             )
 
+        # # set the forget gate bias to 1 as in paper. 
+        # for names in self.rnn._all_weights:
+        #     for name in filter(lambda n: "bias" in n,  names):
+        #         bias = getattr(self.rnn, name)
+        #         n = bias.size(0)
+        #         start, end = n//4, n//2
+        #         bias.data[start:end].fill_(1.)
+
     @classmethod
     def from_dataset(
         cls,

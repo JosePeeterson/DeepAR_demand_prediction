@@ -470,7 +470,7 @@ class TorchNormalizer(InitialParameterRepresenterMixIn, BaseEstimator, Transform
         if isinstance(y_center, torch.Tensor):
             eps = torch.finfo(y_center.dtype).eps
         else:
-            eps = np.finfo(np.float).eps
+            eps = np.finfo(float).eps
         if self.method == "identity":
             if isinstance(y_center, torch.Tensor):
                 self.center_ = torch.zeros(y_center.size()[:-1])
