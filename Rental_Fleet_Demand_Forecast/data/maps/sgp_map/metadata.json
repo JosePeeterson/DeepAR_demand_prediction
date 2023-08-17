@@ -1,0 +1,21 @@
+{
+    "Raw File Name": "master-plan-2014-subzone-boundary-no-sea-shp.zip", 
+    "Group": "Singapore", 
+    "License": "Singapore Open Data License", 
+    "country": "Singapore", 
+    "Unnamed: 11": null, 
+    "Processed File Name": "SGP_ADM1.zip", 
+    "timestamp": 1534539071, 
+    "Known Errors": "Using URA zones", 
+    "datetime": "2018-08-17 16:51:11", 
+    "version": "1_3_3", 
+    "Unnamed: 12": null, 
+    "Source 2": "derived from ADM 3", 
+    "Source 1": "Urban Redevelopment Authority", 
+    "Year": 2016, 
+    "iso": "SGP", 
+    "adm": "ADM1", 
+    "Changes": "No", 
+    "Link to Source Data": "https://data.gov.sg/dataset/master-plan-2014-subzone-boundary-no-sea", 
+    "Boundary Level": "ADM 1"
+}
