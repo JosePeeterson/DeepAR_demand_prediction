@@ -6,5 +6,13 @@
 
 # How is DeepAR trained?
 
-### hi
+### Mechanism
+
+### Train, Validation and Test Dataset Creation
+
+### Training, Validation and Testing using Pytorch-forecasting
+
+### Automatic Hyperparameter Tuning using Optuna
+
+# Results of DeepAR
 
