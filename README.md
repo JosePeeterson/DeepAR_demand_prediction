@@ -38,9 +38,39 @@ Stochastic gradient descent with Adam optimizer is used to learn the weights, Θ
 
 ### Train, Validation and Test Dataset Creation
 
+The response (target) time series, numerical covariates and categorical covariates are concatenated into a single dataset data frame.
+
+Date information time series such as hour-of-the-day, day-of-the-week, day-of-the-month, day-of-the-year, week-of-the-year, month-of-the-year and year are concatenated to the single dataset data frame.
+
+A 70-20-10 split is applied to train-validation-test split of the entire dataset
+
+For the Tampines cluster, all the covariate time series include 'wea_desc_clstr_175', 'temp_clstr_175', 'hum_clstr_175', 'clstr_171', 'clstr_168', 'clstr_175_lag_502', 'clstr_175_lag_166', 'clstr_175_lag_334', '175_inflow', '175_lag_502_inflow', '175_lag_166_inflow' and '175_lag_334_inflow'.
+
+However, only two covariates from the following list are used as covariates at any one training run. This list includes 'wea_desc_clstr_175', 'temp_clstr_175', 'hum_clstr_175', 'clstr_171', 'clstr_168'. This is feature selection. It is a hyperparameter. If all the features are used in one go, it can lead to longer times for learning and the model may have a higher bias due to underfit. This can lead to poor convergence due to not all the features having a high correlation with the targe and ultimately this will lead to poor results. 
+
+Examples of covariate pairs list include:
+1.	[('wea_desc_clstr_175', 'temp_clstr_175'),
+2.	('wea_desc_clstr_175', 'hum_clstr_175'),
+3.	('wea_desc_clstr_175', 'clstr_171'),
+4.	('wea_desc_clstr_175', 'clstr_168'),
+5.	('temp_clstr_175', 'hum_clstr_175'),
+6.	('temp_clstr_175', 'clstr_171'),
+7.	('temp_clstr_175', 'clstr_168'),
+8.	('hum_clstr_175', 'clstr_171'),
+9.	('hum_clstr_175', 'clstr_168'),
+10.	('clstr_171', 'clstr_168')]
+
+Finally, all the possible columns used for training include the following: 'time_idx', 'group', 'clstr_175', 'wea_desc_clstr_175', 'temp_clstr_175', 'hum_clstr_175', 'clstr_171', 'clstr_168', 'clstr_175_lag_502', 'clstr_175_lag_166', 'clstr_175_lag_334','175_inflow', 'date', '_hour_of_day', '_day_of_week', '_day_of_month', '_day_of_year', '_week_of_year', '_month_of_year' and '_year'.
+
 ### Automatic Hyperparameter Tuning using Optuna
 
+Optuna is a hyperparameter optimization framework with visualizations for interpretability. It can efficiently search large spaces and prune unpromising trials for faster results compared to grid search.
+
+The range of all the hyperparameters is specified together with the RMSE of the validation dataset as the objective function to minimize. Optuna finds the optimal hyperparameter combination an intelligent way without trying out all the possible combination as in grid search.
+
 ### Training, Validation and Testing using Pytorch-forecasting
+
+
 
 # Results of DeepAR and comparison Historic Average (HA) Model 
 
