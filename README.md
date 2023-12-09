@@ -85,7 +85,7 @@ DeepAR neural network architecture is defined through the ‘deepar’ object. S
 •	Prediction is made on the test set using ‘deepar.predict()’
 •	Prediction is made one time step at a time as this gives the greatest accuracy. The MAE and RMSE for the entire test set is calculated.  The plot of ground-truth versus DeepAR predictions are also created.   
 
-# Results of DeepAR and comparison Historic Average (HA) Model 
+# Results of DeepAR and comparison with Historic Average (HA) Model 
 
 ### Region-wise results
 
