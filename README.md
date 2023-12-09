@@ -1,5 +1,3 @@
-![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/36c1fc50-6147-4ccb-b41c-660f05bc27ea)# Background
-
 # Why is demand prediction necessary?
 
 Vehicle Demand Prediction is necessary to perform effective vehicle rebalancing and meet future demand to maximise the expected profits at the end of a period.
