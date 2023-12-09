@@ -24,7 +24,17 @@ Beyond univariate time series forecasting, DeepAR can also perform multivariate 
 | --------------------- | --------------------- |
 | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d57479a0-5cee-4f90-8f26-07c9f5f647ad) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d9a31f75-12fe-4264-9f6b-beaaf355d3d3) |
 
-The encoder and decoder networks are identical. The decoder network proceeds the encoder network. The inputs to the networks are the target, z~I, t-1~ and its covarites, x_"I\,t\-\2" . Grey rectangles with "h" _"I\,t\-\1"  represents the cells states of the LSTM cells of the network. l represents the likelihood distribution given the parameters of the distribution output from the LSTM cells as shown by equation x below. z_"I\,t\-\1" represents the mode of the likelihood distribution. During training, the target’s ground truth is known and it is compared with z_"I\,t\-\1"  which is also the next element of the sequence to calculate the loss for both the encoder and decoder networks. In the encoder network z_"I\,t\-\1" . The subscripts i and t represent a particular target at a particular time step for multi-variate forecasting. 
+The encoder and decoder networks are identical. The decoder network proceeds the encoder network. The inputs to the networks are the target, z and its covarites, x . Grey rectangles with h represents the cells states of the LSTM cells of the network. l represents the likelihood distribution given the parameters of the distribution output from the LSTM cells as shown by equation x below. z represents the mode of the likelihood distribution. During training, the target’s ground truth is known and it is compared with z  which is also the next element of the sequence to calculate the loss for both the encoder and decoder networks. In the encoder network z.
+
+During training, some combination of inputs in the encoder will be correlated to the output in the decoder. The weights are trained to identify this combination. The network outputs the mean, μ and the shape, α parameters.  θ(μ,α). The r and p parameters of the negative binomial distribution are calculated using the formulas: r=1/α , p=μ/(μ+r).
+
+The output must be the mode because it minimizes the negative log-likelihood distribution that is used as the loss function during training.
+
+The log likelihood is further aggregated over all the targets, i of multivariate forecasting. 
+
+![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d6a93427-0b82-4153-9808-ebd81175869d)
+
+Stochastic gradient descent with Adam optimizer is used to learn the weights, Θ of the LSTM network.
 
 ### Train, Validation and Test Dataset Creation
 
