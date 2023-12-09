@@ -22,7 +22,7 @@ Beyond univariate time series forecasting, DeepAR can also perform multivariate 
 
 | DeepAR Encoder Network                                                                                                  | DeepAR Decoder Network                                                                                                  |
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d57479a0-5cee-4f90-8f26-07c9f5f647ad)| ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d9a31f75-12fe-4264-9f6b-beaaf355d3d3)|
+| <img width=200/> ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d57479a0-5cee-4f90-8f26-07c9f5f647ad)| <img width=200/> ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d9a31f75-12fe-4264-9f6b-beaaf355d3d3)|
 
 ### Train, Validation and Test Dataset Creation
 
