@@ -89,13 +89,16 @@ DeepAR neural network architecture is defined through the ‘deepar’ object. S
 
 ### Region-wise results
 
-| Region    | DeepAR MAE | HA MSE | DeepAR RMSE | HA MSE | DeepAR Prediction graph | HA prediction graph |
+| Region    | DeepAR MAE | HA MSE | DeepAR RMSE | HA RMSE | DeepAR Prediction graph | HA prediction graph |
 | --------  | ---------- |------- |------------ | ------ |------------------------ |-------------------- |
-| Tampines  | 1.19       | 1.63   | 1.79        | 2.13   |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/ee9ccf71-8c6f-41e4-8ae9-c372731b3fc7) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d67aab0b-57af-41be-b81d-9acb032e47a7)
+| Tampines  | 1.19       | 1.63   | 1.79        | 2.13   |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/ee9ccf71-8c6f-41e4-8ae9-c372731b3fc7) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d67aab0b-57af-41be-b81d-9acb032e47a7)|
+| Central   | -          | -      | 0.97        | 1.71   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/6b508931-2f81-409d-a7d0-ad9d38b9cfae)| ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/9541c400-58ff-4052-ba12-f947bbbaa51b)|
+| Woodlands | -          | -      | 1.17        | 1.43   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/91d9e770-3fd1-4d55-9581-212380aaab59)|![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d4d7eafa-1303-4e4a-81ae-47d6ed8dfd21)|
 
+### Cluster-wise results (Tampines Region)
 
-
-
-
-
-### Region-wise results (Tampines)
+| Cluster   | DeepAR MAE | HA MSE | DeepAR RMSE | HA RMSE | DeepAR Prediction graph | HA prediction graph |
+| --------  | ---------- |------- |------------ | ------ |------------------------ |-------------------- |
+| 126       | -          | -      | 1.01        | 1.55   |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/63a453ca-4b13-41b4-8b32-c8ec02371e53)| ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/62c150d7-145e-42b8-8d86-515a6ad261c1) |
+| 166       | -          | -      | 0.65        | 0.89   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/c277add9-f267-45d5-84b8-5ac5f599c7bb) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/040f4d78-ebde-44bc-9274-ff03111372d0) |
+| 175       | -          | -      | 1.58        | 2.34   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/54ccd970-8cdf-44a7-af67-6d5d54dc32b4) |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/13317c77-4ebf-4305-8565-6f9d1858c7c2) |
