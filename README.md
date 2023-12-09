@@ -24,6 +24,10 @@ Beyond univariate time series forecasting, DeepAR can also perform multivariate 
 | --------------------- | --------------------- |
 | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d57479a0-5cee-4f90-8f26-07c9f5f647ad) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d9a31f75-12fe-4264-9f6b-beaaf355d3d3) |
 
+The encoder and decoder networks are identical. The decoder network proceeds the encoder network. The inputs to the networks are the target, z_"I\,t\-\2"  and its covarites, x_"I\,t\-\2" . Grey rectangles with "h" _"I\,t\-\1"  represents the cells states of the LSTM cells of the network. l represents the likelihood distribution given the parameters of the distribution output from the LSTM cells as shown by equation x below. z_"I\,t\-\1" represents the mode of the likelihood distribution. During training, the target’s ground truth is known and it is compared with z_"I\,t\-\1"  which is also the next element of the sequence to calculate the loss for both the encoder and decoder networks. In the encoder network z_"I\,t\-\1" . The subscripts i and t represent a particular target at a particular time step for multi-variate forecasting. ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/a23ca2da-b9fc-4424-a40f-87450898ed73)
+
+
+
 ### Train, Validation and Test Dataset Creation
 
 ### Automatic Hyperparameter Tuning using Optuna
