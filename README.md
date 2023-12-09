@@ -70,10 +70,32 @@ The range of all the hyperparameters is specified together with the RMSE of the 
 
 ### Training, Validation and Testing using Pytorch-forecasting
 
+After splitting the dataset into train, validation, and test sets, the optimal hyperparameter is selected from the results of Optuna below and the training routine is initiated. 
 
+The categorical variables are first one-hot-encoded and goes through an embedding layer to reduce dimensionality. 
+
+The ‘train_dataset’ object is created specifying the different columns of the data frame like the target, numerical and categorical covariates.  
+
+Three data loaders called are created. train_dataloader,  val_dataloader, and  test_dataloader are created to combines a dataset and a sampler to provides an iterable over the given dataset.
+
+A ‘trainer’ object is initialized specifying the details of the training routine like maximum number of epochs, use of GPUs, gradient clipping and so on.
+
+DeepAR neural network architecture is defined through the ‘deepar’ object. Specifications like training dataset, learning rate, number of neurons to use in the LSTM cells, the number of LSTM layers, dropout and the negative binomial likelihood loss are specified. 
+•	‘trainer.fit’ is applied to fit the model to training data and validate on the validation set.
+•	Prediction is made on the test set using ‘deepar.predict()’
+•	Prediction is made one time step at a time as this gives the greatest accuracy. The MAE and RMSE for the entire test set is calculated.  The plot of ground-truth versus DeepAR predictions are also created.   
 
 # Results of DeepAR and comparison Historic Average (HA) Model 
 
-### Cluster-wise results
+### Region-wise results
+
+| Region    | DeepAR MAE | HA MSE | DeepAR RMSE | HA MSE | DeepAR Prediction graph | HA prediction graph |
+| --------  | ---------- |------- |------------ | ------ |------------------------ |-------------------- |
+| Tampines  | 1.19       | 1.63   | 1.79        | 2.13   |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/ee9ccf71-8c6f-41e4-8ae9-c372731b3fc7) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/d67aab0b-57af-41be-b81d-9acb032e47a7)
+
+
+
+
+
 
 ### Region-wise results (Tampines)
