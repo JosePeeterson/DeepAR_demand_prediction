@@ -102,3 +102,8 @@ DeepAR neural network architecture is defined through the ‘deepar’ object. S
 | 126       | 1.01        | 1.55   |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/63a453ca-4b13-41b4-8b32-c8ec02371e53)| ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/62c150d7-145e-42b8-8d86-515a6ad261c1) |
 | 166       | 0.65        | 0.89   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/c277add9-f267-45d5-84b8-5ac5f599c7bb) | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/040f4d78-ebde-44bc-9274-ff03111372d0) |
 | 175       | 1.58        | 2.34   | ![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/54ccd970-8cdf-44a7-af67-6d5d54dc32b4) |![image](https://github.com/JosePeeterson/DeepAR_demand_prediction/assets/76463517/13317c77-4ebf-4305-8565-6f9d1858c7c2) |
+
+
+## System Diagram
+
+![image](https://github.com/user-attachments/assets/d405d237-e909-44a0-84bd-8663c0605742)
